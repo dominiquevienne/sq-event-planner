@@ -26,6 +26,20 @@ class AdminController extends Controller
         //
     }
 
+    private static $fieldsOrder;
+
+    private static function sortFields($a, $b)
+    {
+        foreach (self::$fieldsOrder as $orderItem) {
+            if ($orderItem->field_id === $a) {
+                $aOrder = $orderItem->order;
+            }
+            if ($orderItem->field_id === $b) {
+                $bOrder = $orderItem->order;
+            }
+        }
+        return $aOrder - $bOrder;
+    }
 
     public function export($id)
     {
@@ -34,8 +48,8 @@ class AdminController extends Controller
         $csv = Writer::createFromFileObject(new \SplTempFileObject());
 
         $event = Event::findOrFail($id);
-        $header = ["Person Name", "Department", "Will you be present at this event ?", "Why not ? (optional)"];
-        foreach ($event->fields->sortBy('id') as $field) {
+        $header = ["Person Name", "Department", "Email", "Will you attend this event?", "Why not? (optional)"];
+        foreach ($event->answerFields as $field) {
             array_push($header, $field->label);
         }
 
@@ -50,21 +64,45 @@ class AdminController extends Controller
             ->join('users', 'event_registrations.user_id', '=', 'users.id')
             ->join('fields', 'fields.id', '=', 'registration_values.field_id')
             ->select('registration_values.value as value', 'fields.label as fieldname', 'fields.id as fieldid', 'users.name as username',
-                'users.department as department')
-            ->orderBy('username', 'fieldid')
-            ->where('event_registrations.event_id', $id)->get();
+                'users.department as department', 'users.email as email')
+            ->where('event_registrations.event_id', $id)
+            ->where('fields.type',"!=",  "header")
+            ->get();
 
-        $map = [];
+
+        self::$fieldsOrder = DB::table('event_fields')
+            ->select('field_id', 'order')
+            ->where('event_id', $id)
+            ->get();
+
+
+        $departmentOrder = new \stdClass();
+        $departmentOrder->field_id = 'department';
+        $departmentOrder->order = 1;
+        self::$fieldsOrder->push($departmentOrder);
+
+        $emailOrder = new \stdClass();
+        $emailOrder->field_id = 'email';
+        $emailOrder->order = 2;
+        self::$fieldsOrder->push($emailOrder);
+
+        $participatingOrder = new \stdClass();
+        $participatingOrder->field_id = 1;
+        $participatingOrder->order = 3;
+        self::$fieldsOrder->push($participatingOrder);
+
+        $notParticipatingReason = new \stdClass();
+        $notParticipatingReason->field_id = 2;
+        $notParticipatingReason->order = 4;
+        self::$fieldsOrder->push($notParticipatingReason);
+
+        $map = array();
 
         foreach ($records as $record) {
             $map[$record->username]['department'] = $record->department;
+            $map[$record->username]['email'] = $record->email;
             $map[$record->username][$record->fieldid] = $record->value;
         }
-
-        // sort by username
-        ksort($map);
-        // sort answers by field id
-        ksort($map[$record->username]);
 
         // hide irrelevant answers (conditional fields)
         foreach ($map as $username => $answers) {
@@ -74,7 +112,7 @@ class AdminController extends Controller
                     $map[$username][$fieldid] = "";
                 }
 
-                if ($fieldid < 3 || $fieldid === "department") {
+                if ($fieldid < 3 || $fieldid === "department" || $fieldid === "email") {
                     continue;
                 }
 
@@ -95,8 +133,12 @@ class AdminController extends Controller
             }
         }
 
+        // sort by username (column)
+        ksort($map);
+
         // insert in CSV
         foreach ($map as $username => $answers) {
+            uksort($answers, array("App\Http\Controllers\AdminController", "sortFields"));
             $row = [$username];
             foreach ($answers as $fieldid => $value) {
                 array_push($row, $value);

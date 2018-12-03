@@ -2,6 +2,7 @@
 
 namespace App\Policies;
 
+use App\Event;
 use App\EventRegistration;
 use App\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
@@ -30,7 +31,18 @@ class EventRegistrationPolicy
      */
     public function create(User $user)
     {
-        //
+        // see "register" below
+    }
+
+    /**
+     * Determine whether the user can register to an event.
+     *
+     * @param  \App\User $user
+     * @return mixed
+     */
+    public function register(Event $event)
+    {
+        return $event->registration_deadline->isFuture();
     }
 
     /**
@@ -42,7 +54,7 @@ class EventRegistrationPolicy
      */
     public function update(User $user, EventRegistration $eventRegistration)
     {
-        return $user->id === $eventRegistration->user_id;
+        return $user->id === $eventRegistration->user_id && $this->register($eventRegistration->event);
     }
 
     /**
@@ -54,7 +66,7 @@ class EventRegistrationPolicy
      */
     public function delete(User $user, EventRegistration $eventRegistration)
     {
-        return $user->id === $eventRegistration->user_id;
+        return $user->id === $eventRegistration->user_id && $this->register($eventRegistration->event);
     }
 
     /**
@@ -66,7 +78,7 @@ class EventRegistrationPolicy
      */
     public function restore(User $user, EventRegistration $eventRegistration)
     {
-        return $user->id === $eventRegistration->user_id;
+        return $user->id === $eventRegistration->user_id && $this->register($eventRegistration->event);
     }
 
     /**
@@ -78,6 +90,6 @@ class EventRegistrationPolicy
      */
     public function forceDelete(User $user, EventRegistration $eventRegistration)
     {
-        return $user->id === $eventRegistration->user_id;
+        return $user->id === $eventRegistration->user_id && $this->register($eventRegistration->event);
     }
 }

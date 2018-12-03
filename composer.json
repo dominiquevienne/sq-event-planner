@@ -58,5 +58,14 @@
         "optimize-autoloader": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nexus.bank.swissquote.ch/repository/composer/"
+        },
+        {
+            "packagist.org": false
+        }
+    ]
 }

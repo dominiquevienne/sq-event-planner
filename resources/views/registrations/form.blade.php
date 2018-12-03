@@ -2,11 +2,19 @@
 
 @section('title', $event->name." - Registration")
 
+@section('styles')
+    <link rel="stylesheet" href="/css/themes/{{$event->theme}}.css"/>
+@endsection
+
+@section('bodyprops')id="form-sq-party"@endsection
+
+@section('containerclass','form')
+
 @section('content')
 
-    <h1>{{$event->name}} - {{auth()->user()->name}}</h1>
-    <br>
-    <div class="card-group col-sm-6 ">
+    <h1 style="font-size: 3.5em;color:#fa5b35">Welcome Brave Pioneer!</h1>
+    <h1>{{$event->name}} - SPACEQUEST</h1>
+    <div class="card-group col-sm-10 ">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <p class="card-text">
@@ -34,10 +42,71 @@
                     </svg>
                     Geneva - Palexpo
                 </p>
-                <a href="{{$event->gmap}}" class="card-link">Open in Google Maps</a>
+                <a target="_blank" href="{{$event->gmap}}" class="card-link">Open in Google Maps</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <p class="card-text">
+                    <svg style="margin-top:-2px" width="18" height="18" class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1"
+                         aria-hidden="true">
+                        <path fill-rule="evenodd"
+                              d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z">
+                        </path>
+                    </svg>
+                    Registration deadline
+                </p>
+                <p class="card-text">
+                    {{$event->registration_deadline->format('d-m-Y H:i T')}}
+                </p>
             </div>
         </div>
     </div>
+
+    @if ($errors->any())
+        <br>
+        <div class="col-sm-10">
+            <div class="alert alert-danger">
+                There are validation errors, please fix them and try again.
+            </div>
+        </div>
+    @endif
+
+    @if($mode === 'show' && $event->registration_deadline->isFuture())
+        <br>
+        <div class="row">
+            <div class="col-sm-10">
+                <div class="alert alert-success">
+                    We have your answer for this event. You can modify it until {{$event->registration_deadline->format('l d-m-Y H:i T')}}.
+                </div>
+            </div>
+        </div>
+    @endif
+
+    @if($mode === 'show' && $event->registration_deadline->isPast())
+        <br>
+        <div class="col-sm-10">
+            <div class="alert alert-warning">
+                We have your answer for this event. The registration deadline has passed and you cannot modify it. For exceptional changes,
+                contact
+                sqlife@swissquote.ch.
+            </div>
+        </div>
+    @endif
+
+    @if($mode === 'show' && $event->practical_infos != null)
+
+        <div class="col-sm-10">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Practical Infos</h5>
+                    <p class="card-text">{!! nl2br(e($event->practical_infos)) !!}</p>
+                </div>
+            </div>
+        </div>
+
+    @endif
+
     <div>
         <br>
         <form action="{{route('events.registration.store', ['event' => $event])}}" method="post">
@@ -49,7 +118,7 @@
             <?php
             $participationField = new stdClass();
             $participationField->id = 1;
-            $participationField->label = "Will you be present at this event ?";
+            $participationField->label = "Will you attend this event?";
             $participationField->type = "radio";
             $participationField->options = "Yes;No";
             $participationField->help = "";
@@ -57,7 +126,7 @@
 
             $reasonField = new stdClass();
             $reasonField->id = 2;
-            $reasonField->label = "Why not ? (optional)";
+            $reasonField->label = "Why not? (optional)";
             $reasonField->type = "text";
             $reasonField->condition = "1:No";
             $reasonField->placeholder = "";
@@ -65,13 +134,13 @@
             $reasonField->condition = "";
             ?>
 
-            @include('forms.radio', ['field' => $participationField, 'mode' => $mode, 'value' => $values[1] ?? ''])
-            @include('forms.text', ['field' => $reasonField, 'mode' => $mode, 'value' => $values[2] ?? '', 'class' => 'hidden'])
+            @include('forms.radio', ['field' => $participationField, 'mode' => $mode, 'value' => old("field-1") ?? $values[1] ?? '', 'errors' => $errors->get('field-1')])
+            @include('forms.text', ['field' => $reasonField, 'mode' => $mode, 'value' => old("field-2") ?? $values[2] ?? '', 'class' => 'hidden', 'errors' => $errors->get('field-2')])
 
 
             <div id="participant-form" style="display:none">
                 @foreach($event->fields as $field)
-                    @include('forms.'.$field->type, ['field' => $field, 'mode' => $mode, 'value' => $values[$field->id] ?? ''])
+                    @include('forms.'.$field->type, ['field' => $field, 'mode' => $mode, 'value' => old("field-$field->id") ?? $values[$field->id] ?? '', 'errors' => $errors->get("field-$field->id")])
                 @endforeach
             </div>
 
@@ -79,7 +148,7 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
             @endif
 
-            @if($mode === 'show')
+            @if($mode === 'show' && $event->registration_deadline->isFuture())
                 <a href="{{route('events.registration.edit', ['event' => $event, 'registration' => $registration])}}" class="btn btn-primary">Modify
                     registration</a>
             @endif

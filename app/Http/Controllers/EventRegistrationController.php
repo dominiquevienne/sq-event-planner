@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Event;
 use App\EventRegistration;
+use App\Policies\EventRegistrationPolicy;
 use App\RegistrationValue;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -31,9 +33,15 @@ class EventRegistrationController extends Controller
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function create($eventId)
     {
+        $policy = new EventRegistrationPolicy;
+        if (!$policy->register(Event::findOrFail($eventId))) {
+            throw new AuthorizationException();
+        }
+
         $registration = EventRegistration::where('event_id', $eventId)->where('user_id', auth()->user()->id);
 
         if ($registration->exists()) {
@@ -56,20 +64,60 @@ class EventRegistrationController extends Controller
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      * @throws \Illuminate\Auth\Access\AuthorizationException
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function store($eventId, Request $request)
     {
 
-        $request->validate([
-            'field-1' => 'required'
-        ]);
-
         $event = Event::findOrFail($eventId);
+
+        $validationRules = ['field-1' => 'required'];
+
+        if ($request->input("field-1") === "Yes") {
+            foreach ($event->fields as $field) {
+                $required = $field->mandatory && $request->input("field-1") === 'Yes';
+                if (!empty($field->condition)) {
+                    $conditionFieldId = preg_split("~:~", $field->condition)[0];
+                    $conditionValue = preg_split("~:~", $field->condition)[1];
+                    if ($conditionValue !== $request->input("field-$conditionFieldId")) {
+                        $required = false;
+                    }
+                }
+                if ($required) {
+                    $validationRules["field-$field->id"] = 'required';
+                }
+                if ($field->type === "team") {
+                    $teamCapacity = 0;
+                    foreach (preg_split('~;~', $field->options) as $team) {
+                        $teamName = preg_split('~:~', $team)[0];
+                        if ($teamName === $request->input("field-$field->id")) {
+                            $teamCapacity = preg_split('~:~', $team)[1];
+                        }
+                    }
+                    $validationRules["field-$field->id"] = [
+                        'required',
+                        function ($attribute, $value, $fail) use ($field, $event, $teamCapacity) {
+                            $currentSize = $event->teams($field)[$value] ?? 0;
+                            if ($currentSize >= $teamCapacity) {
+                                $fail("Team $value is full, pick another one");
+                            }
+                        }
+                    ];
+                }
+            }
+        }
+
+        $this->validate($request, $validationRules, ['required' => 'This field is required']);
 
         $registrationId = $request->input('registrationid');
 
         if (!empty($registrationId)) {
             $this->authorize('update', EventRegistration::findOrFail($registrationId));
+        } else {
+            $policy = new EventRegistrationPolicy;
+            if (!$policy->register($event)) {
+                throw new AuthorizationException();
+            }
         }
 
         DB::transaction(function () use ($event, $request, &$registrationId) {
@@ -171,7 +219,7 @@ class EventRegistrationController extends Controller
         $event = Event::findOrFail($eventId);
         $registration = EventRegistration::findOrFail($registrationId);
 
-        $this->authorize('view', $registration);
+        $this->authorize('update', $registration);
 
         $values = RegistrationValue::where('event_registration_id', $registrationId);
 

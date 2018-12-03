@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sq-event-planner
+  namespace: sq-event-planner
+  labels:
+    app: sq-event-planner
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sq-event-planner
+  template:
+    metadata:
+      namespace: sq-event-planner
+      labels:
+        app: sq-event-planner
+    spec:
+      containers:
+      - name: sq-event-planner
+        image: docker.bank.swissquote.ch/sq-event-planner:latest
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - mountPath: /app/bootstrap/cache
+          name: cache
+        - mountPath: /run/apache2
+          name: apache2-run
+        - mountPath: /app/storage
+          name: storage
+        - mountPath: /app/.env
+          subPath: ".env"
+          name: config
+      volumes:
+      - name: apache2-run
+        emptyDir:
+          medium: "Memory"
+      - name: cache
+        emptyDir:
+          medium: "Memory"
+      - name: config
+        secret:
+          secretName: sq-event-planner-config
+      - name: storage
+        persistentVolumeClaim:
+          claimName: sq-event-planner-storage

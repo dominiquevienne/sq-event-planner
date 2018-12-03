@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: sq-event-planner
+  namespace: sq-event-planner
+spec:
+  selector:
+    app: sq-event-planner
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080

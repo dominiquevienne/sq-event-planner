@@ -6,9 +6,9 @@ if ($mode === "show") {
 }
 ?>
 
-<div class="form-group col-sm-6 {{$class ?? ''}}" id="field-group-{{$field->id}}" data-condition="{{$field->condition}}">
+<div class="form-group col-sm-10 {{$class ?? ''}}" id="field-group-{{$field->id}}" data-condition="{{$field->condition}}">
     <label for="field-{{$field->id}}">{{$field->label}}</label>
-    <select {{$readonly}} name="field-{{$field->id}}" id="field-{{$field->id}}" class="custom-select">
+    <select class="col-sm-4" {{$readonly}} name="field-{{$field->id}}" id="field-{{$field->id}}" class="custom-select">
 
         <option>{{$placeholder ?? 'Choose...'}}</option>
         @foreach(preg_split('~;~',$field->options) as $option)

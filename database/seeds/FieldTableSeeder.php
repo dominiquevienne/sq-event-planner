@@ -37,9 +37,15 @@ class FieldTableSeeder extends Seeder
 
         DB::table('fields')->insert([
             'id' => $id++,
-            'type' => 'doubletext',
-            'label' => 'Who do you want to share the room with ?',
-            'help' => 'Rooms have 3 occupants in total, input the name and department of the persons you want to share the room with',
+            'type' => 'text',
+            'label' => 'Who would you like to share the room with (1st preference) ?',
+            'condition' => "3:Yes"
+        ]);
+
+        DB::table('fields')->insert([
+            'id' => $id++,
+            'type' => 'text',
+            'label' => 'Who do you want to share the room with (2nd preference) ?',
             'condition' => "3:Yes"
         ]);
 
@@ -55,7 +61,7 @@ class FieldTableSeeder extends Seeder
             'id' => $id++,
             'type' => 'radio',
             'label' => 'Meal Choice',
-            'options' => 'Meat;Fish;Vegetarian'
+            'options' => 'Meat;Vegetarian'
         ]);
 
         DB::table('fields')->insert([
@@ -69,20 +75,21 @@ class FieldTableSeeder extends Seeder
             'id' => $id++,
             'type' => 'text',
             'label' => 'Which ones ?',
-            'condition' => "7:Yes"
+            'condition' => "8:Yes"
         ]);
 
         DB::table('fields')->insert([
             'id' => $id++,
-            'type' => 'select',
+            'type' => 'team',
             'label' => 'Sitting place (Team) ?',
-            'options' => env('SECRET_TEAMS')
+            'options' => "A:30;B:30;C:30;D:30;E:30;F:30;G:30"
         ]);
 
         DB::table('fields')->insert([
             'id' => $id++,
             'type' => 'text',
-            'label' => 'Comments'
+            'label' => 'Comments (optional)',
+            'mandatory' => false
         ]);
 
         for ($i = 3; $i < $id; $i++) {
