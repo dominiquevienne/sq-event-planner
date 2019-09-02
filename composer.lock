@@ -4,19 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d2310b9bdcaa4b277b5e6e189474789",
+    "content-hash": "92b066849a80d5ea79140b2330cc0cf9",
     "packages": [
         {
             "name": "adldap2/adldap2",
             "version": "v8.1.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Adldap2/Adldap2.git",
-                "reference": "54722408c68f12942fcbf4a1b666d90a178ddc5c"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Adldap2/Adldap2/zipball/54722408c68f12942fcbf4a1b666d90a178ddc5c",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/adldap2/adldap2/v8.1.5/adldap2-adldap2-v8.1.5.zip",
                 "reference": "54722408c68f12942fcbf4a1b666d90a178ddc5c",
                 "shasum": ""
             },
@@ -35,15 +30,14 @@
                     "Adldap\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
                     "name": "Steve Bauman",
-                    "email": "steven_bauman@outlook.com",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "steven_bauman@outlook.com"
                 }
             ],
             "description": "A PHP LDAP Package for humans.",
@@ -61,14 +55,9 @@
         {
             "name": "adldap2/adldap2-laravel",
             "version": "v4.0.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Adldap2/Adldap2-Laravel.git",
-                "reference": "a5196cce3b5394d7b5e84eb68b38260cb9f0fd3c"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Adldap2/Adldap2-Laravel/zipball/a5196cce3b5394d7b5e84eb68b38260cb9f0fd3c",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/adldap2/adldap2-laravel/v4.0.10/adldap2-adldap2-laravel-v4.0.10.zip",
                 "reference": "a5196cce3b5394d7b5e84eb68b38260cb9f0fd3c",
                 "shasum": ""
             },
@@ -81,7 +70,7 @@
                 "orchestra/testbench": "~3.2",
                 "phpunit/phpunit": "~6.0"
             },
-            "type": "project",
+            "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
@@ -98,7 +87,6 @@
                     "Adldap\\Laravel\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -114,14 +102,9 @@
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dnoegel/php-xdg-base-dir.git",
-                "reference": "265b8593498b997dc2d31e75b89f053b5cc9621a"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dnoegel/php-xdg-base-dir/zipball/265b8593498b997dc2d31e75b89f053b5cc9621a",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/dnoegel/php-xdg-base-dir/0.1/dnoegel-php-xdg-base-dir-0.1.zip",
                 "reference": "265b8593498b997dc2d31e75b89f053b5cc9621a",
                 "shasum": ""
             },
@@ -131,13 +114,12 @@
             "require-dev": {
                 "phpunit/phpunit": "@stable"
             },
-            "type": "project",
+            "type": "library",
             "autoload": {
                 "psr-4": {
                     "XdgBaseDir\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -147,14 +129,9 @@
         {
             "name": "doctrine/inflector",
             "version": "v1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/inflector.git",
-                "reference": "5527a48b7313d15261292c149e55e26eae771b0a"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/5527a48b7313d15261292c149e55e26eae771b0a",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/doctrine/inflector/v1.3.0/doctrine-inflector-v1.3.0.zip",
                 "reference": "5527a48b7313d15261292c149e55e26eae771b0a",
                 "shasum": ""
             },
@@ -175,7 +152,6 @@
                     "Doctrine\\Common\\Inflector\\": "lib/Doctrine/Common/Inflector"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -213,85 +189,86 @@
         },
         {
             "name": "doctrine/lexer",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/lexer.git",
-                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c"
-            },
+            "version": "1.1.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/83893c552fd2045dd78aef794c31e694c37c0b8c",
-                "reference": "83893c552fd2045dd78aef794c31e694c37c0b8c",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/doctrine/lexer/1.1.0/doctrine-lexer-1.1.0.zip",
+                "reference": "e17f069ede36f7534b95adec71910ed1b49c74ea",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^6.0",
+                "phpstan/phpstan": "^0.11.8",
+                "phpunit/phpunit": "^8.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Lexer\\": "lib/"
+                "psr-4": {
+                    "Doctrine\\Common\\Lexer\\": "lib/Doctrine/Common/Lexer"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
                     "name": "Guilherme Blanco",
                     "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com"
                 }
             ],
-            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
-            "homepage": "http://www.doctrine-project.org",
+            "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "https://www.doctrine-project.org/projects/lexer.html",
             "keywords": [
+                "annotations",
+                "docblock",
                 "lexer",
-                "parser"
+                "parser",
+                "php"
             ],
-            "time": "2014-09-09T13:34:57+00:00"
+            "time": "2019-07-30T19:33:28+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
-            "version": "v2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dragonmantank/cron-expression.git",
-                "reference": "92a2c3768d50e21a1f26a53cb795ce72806266c5"
-            },
+            "version": "v2.3.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/92a2c3768d50e21a1f26a53cb795ce72806266c5",
-                "reference": "92a2c3768d50e21a1f26a53cb795ce72806266c5",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/dragonmantank/cron-expression/v2.3.0/dragonmantank-cron-expression-v2.3.0.zip",
+                "reference": "72b6fbf76adb3cf5bc0db68559b33d41219aba27",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0"
+                "php": "^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~6.4"
+                "phpunit/phpunit": "^6.4|^7.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Cron\\": "src/Cron/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -312,20 +289,15 @@
                 "cron",
                 "schedule"
             ],
-            "time": "2018-06-06T03:12:17+00:00"
+            "time": "2019-03-31T00:38:28+00:00"
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "0578b32b30b22de3e8664f797cf846fc9246f786"
-            },
+            "version": "2.1.11",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/0578b32b30b22de3e8664f797cf846fc9246f786",
-                "reference": "0578b32b30b22de3e8664f797cf846fc9246f786",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/egulias/email-validator/2.1.11/egulias-email-validator-2.1.11.zip",
+                "reference": "92dd169c32f6f55ba570c309d83f5209cefb5e23",
                 "shasum": ""
             },
             "require": {
@@ -335,7 +307,8 @@
             "require-dev": {
                 "dominicsayers/isemail": "dev-master",
                 "phpunit/phpunit": "^4.8.35||^5.7||^6.0",
-                "satooshi/php-coveralls": "^1.0.1"
+                "satooshi/php-coveralls": "^1.0.1",
+                "symfony/phpunit-bridge": "^4.4@dev"
             },
             "suggest": {
                 "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
@@ -343,7 +316,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.1.x-dev"
                 }
             },
             "autoload": {
@@ -351,7 +324,6 @@
                     "Egulias\\EmailValidator\\": "EmailValidator"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -369,20 +341,15 @@
                 "validation",
                 "validator"
             ],
-            "time": "2018-09-25T20:47:26+00:00"
+            "time": "2019-08-13T17:33:27+00:00"
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.7.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/erusev/parsedown.git",
-                "reference": "92e9c27ba0e74b8b028b111d1b6f956a15c01fc1"
-            },
+            "version": "1.7.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/92e9c27ba0e74b8b028b111d1b6f956a15c01fc1",
-                "reference": "92e9c27ba0e74b8b028b111d1b6f956a15c01fc1",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/erusev/parsedown/1.7.3/erusev-parsedown-1.7.3.zip",
+                "reference": "6d893938171a817f4e9bc9e86f2da1e370b7bcd7",
                 "shasum": ""
             },
             "require": {
@@ -398,7 +365,6 @@
                     "Parsedown": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -415,28 +381,23 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2018-03-08T01:11:30+00:00"
+            "time": "2019-03-17T18:48:37+00:00"
         },
         {
             "name": "fideloper/proxy",
-            "version": "4.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fideloper/TrustedProxy.git",
-                "reference": "cf8a0ca4b85659b9557e206c90110a6a4dba980a"
-            },
+            "version": "4.2.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fideloper/TrustedProxy/zipball/cf8a0ca4b85659b9557e206c90110a6a4dba980a",
-                "reference": "cf8a0ca4b85659b9557e206c90110a6a4dba980a",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/fideloper/proxy/4.2.0/fideloper-proxy-4.2.0.zip",
+                "reference": "39a4c2165e578bc771f5dc031c273210a3a9b6d2",
                 "shasum": ""
             },
             "require": {
-                "illuminate/contracts": "~5.0",
+                "illuminate/contracts": "~5.0|~6.0",
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "illuminate/http": "~5.6",
+                "illuminate/http": "~5.6|~6.0",
                 "mockery/mockery": "~1.0",
                 "phpunit/phpunit": "^6.0"
             },
@@ -453,7 +414,6 @@
                     "Fideloper\\Proxy\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -469,19 +429,152 @@
                 "proxy",
                 "trusted proxy"
             ],
-            "time": "2018-02-07T20:20:57+00:00"
+            "time": "2019-07-29T16:49:45+00:00"
+        },
+        {
+            "name": "illuminate/console",
+            "version": "v5.8.34",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/illuminate/console/v5.8.34/illuminate-console-v5.8.34.zip",
+                "reference": "e6e4708e6c6baaf92120848e885855ab3d76f30f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.8.*",
+                "illuminate/support": "5.8.*",
+                "php": "^7.1.3",
+                "symfony/console": "^4.2",
+                "symfony/process": "^4.2"
+            },
+            "suggest": {
+                "dragonmantank/cron-expression": "Required to use scheduling component (^2.0).",
+                "guzzlehttp/guzzle": "Required to use the ping methods on schedules (^6.0).",
+                "illuminate/filesystem": "Required to use the generator command (5.8.*)"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Console\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Console package.",
+            "homepage": "https://laravel.com",
+            "time": "2019-08-12T13:08:28+00:00"
+        },
+        {
+            "name": "illuminate/contracts",
+            "version": "v5.8.34",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/illuminate/contracts/v5.8.34/illuminate-contracts-v5.8.34.zip",
+                "reference": "00fc6afee788fa07c311b0650ad276585f8aef96",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "psr/container": "^1.0",
+                "psr/simple-cache": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Contracts\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Contracts package.",
+            "homepage": "https://laravel.com",
+            "time": "2019-07-30T13:57:21+00:00"
+        },
+        {
+            "name": "illuminate/support",
+            "version": "v5.8.34",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/illuminate/support/v5.8.34/illuminate-support-v5.8.34.zip",
+                "reference": "7aabcab4634a1c7865fa6acb6b1b810cf4b699ea",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/inflector": "^1.1",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "illuminate/contracts": "5.8.*",
+                "nesbot/carbon": "^1.26.3 || ^2.0",
+                "php": "^7.1.3"
+            },
+            "conflict": {
+                "tightenco/collect": "<5.5.33"
+            },
+            "suggest": {
+                "illuminate/filesystem": "Required to use the composer class (5.8.*).",
+                "moontoast/math": "Required to use ordered UUIDs (^1.1).",
+                "ramsey/uuid": "Required to use Str::uuid() (^3.7).",
+                "symfony/process": "Required to use the composer class (^4.2).",
+                "symfony/var-dumper": "Required to use the dd function (^4.2).",
+                "vlucas/phpdotenv": "Required to use the env helper (^3.3)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Support\\": ""
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Support package.",
+            "homepage": "https://laravel.com",
+            "time": "2019-08-11T12:48:29+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
             "version": "v0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/JakubOnderka/PHP-Console-Color.git",
-                "reference": "d5deaecff52a0d61ccb613bb3804088da0307191"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JakubOnderka/PHP-Console-Color/zipball/d5deaecff52a0d61ccb613bb3804088da0307191",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/jakub-onderka/php-console-color/v0.2/jakub-onderka-php-console-color-v0.2.zip",
                 "reference": "d5deaecff52a0d61ccb613bb3804088da0307191",
                 "shasum": ""
             },
@@ -501,7 +594,6 @@
                     "JakubOnderka\\PhpConsoleColor\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-2-Clause"
             ],
@@ -515,36 +607,31 @@
         },
         {
             "name": "jakub-onderka/php-console-highlighter",
-            "version": "v0.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/JakubOnderka/PHP-Console-Highlighter.git",
-                "reference": "7daa75df45242c8d5b75a22c00a201e7954e4fb5"
-            },
+            "version": "v0.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JakubOnderka/PHP-Console-Highlighter/zipball/7daa75df45242c8d5b75a22c00a201e7954e4fb5",
-                "reference": "7daa75df45242c8d5b75a22c00a201e7954e4fb5",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/jakub-onderka/php-console-highlighter/v0.4/jakub-onderka-php-console-highlighter-v0.4.zip",
+                "reference": "9f7a229a69d52506914b4bc61bfdb199d90c5547",
                 "shasum": ""
             },
             "require": {
-                "jakub-onderka/php-console-color": "~0.1",
-                "php": ">=5.3.0"
+                "ext-tokenizer": "*",
+                "jakub-onderka/php-console-color": "~0.2",
+                "php": ">=5.4.0"
             },
             "require-dev": {
                 "jakub-onderka/php-code-style": "~1.0",
-                "jakub-onderka/php-parallel-lint": "~0.5",
+                "jakub-onderka/php-parallel-lint": "~1.0",
                 "jakub-onderka/php-var-dump-check": "~0.1",
                 "phpunit/phpunit": "~4.0",
                 "squizlabs/php_codesniffer": "~1.5"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "JakubOnderka\\PhpConsoleHighlighter": "src/"
+                "psr-4": {
+                    "JakubOnderka\\PhpConsoleHighlighter\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -555,94 +642,63 @@
                     "homepage": "http://www.acci.cz/"
                 }
             ],
-            "time": "2015-04-20T18:58:01+00:00"
+            "description": "Highlight PHP code in terminal",
+            "time": "2018-09-29T18:48:56+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v5.7.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "172f69f86bb86e107fb9fafff293b4b01291cf05"
-            },
+            "version": "v5.8.34",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/172f69f86bb86e107fb9fafff293b4b01291cf05",
-                "reference": "172f69f86bb86e107fb9fafff293b4b01291cf05",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/laravel/framework/v5.8.34/laravel-framework-v5.8.34.zip",
+                "reference": "c3a870b96c7afe5174f486af74768ccfddeec77b",
                 "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "^1.1",
                 "dragonmantank/cron-expression": "^2.0",
+                "egulias/email-validator": "^2.0",
                 "erusev/parsedown": "^1.7",
+                "ext-json": "*",
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
                 "league/flysystem": "^1.0.8",
                 "monolog/monolog": "^1.12",
-                "nesbot/carbon": "^1.26.3",
+                "nesbot/carbon": "^1.26.3 || ^2.0",
                 "opis/closure": "^3.1",
                 "php": "^7.1.3",
                 "psr/container": "^1.0",
                 "psr/simple-cache": "^1.0",
                 "ramsey/uuid": "^3.7",
                 "swiftmailer/swiftmailer": "^6.0",
-                "symfony/console": "^4.1",
-                "symfony/debug": "^4.1",
-                "symfony/finder": "^4.1",
-                "symfony/http-foundation": "^4.1",
-                "symfony/http-kernel": "^4.1",
-                "symfony/process": "^4.1",
-                "symfony/routing": "^4.1",
-                "symfony/var-dumper": "^4.1",
+                "symfony/console": "^4.2",
+                "symfony/debug": "^4.2",
+                "symfony/finder": "^4.2",
+                "symfony/http-foundation": "^4.2",
+                "symfony/http-kernel": "^4.2",
+                "symfony/process": "^4.2",
+                "symfony/routing": "^4.2",
+                "symfony/var-dumper": "^4.2",
                 "tijsverkoyen/css-to-inline-styles": "^2.2.1",
-                "vlucas/phpdotenv": "^2.2"
+                "vlucas/phpdotenv": "^3.3"
             },
             "conflict": {
                 "tightenco/collect": "<5.5.33"
-            },
-            "replace": {
-                "illuminate/auth": "self.version",
-                "illuminate/broadcasting": "self.version",
-                "illuminate/bus": "self.version",
-                "illuminate/cache": "self.version",
-                "illuminate/config": "self.version",
-                "illuminate/console": "self.version",
-                "illuminate/container": "self.version",
-                "illuminate/contracts": "self.version",
-                "illuminate/cookie": "self.version",
-                "illuminate/database": "self.version",
-                "illuminate/encryption": "self.version",
-                "illuminate/events": "self.version",
-                "illuminate/filesystem": "self.version",
-                "illuminate/hashing": "self.version",
-                "illuminate/http": "self.version",
-                "illuminate/log": "self.version",
-                "illuminate/mail": "self.version",
-                "illuminate/notifications": "self.version",
-                "illuminate/pagination": "self.version",
-                "illuminate/pipeline": "self.version",
-                "illuminate/queue": "self.version",
-                "illuminate/redis": "self.version",
-                "illuminate/routing": "self.version",
-                "illuminate/session": "self.version",
-                "illuminate/support": "self.version",
-                "illuminate/translation": "self.version",
-                "illuminate/validation": "self.version",
-                "illuminate/view": "self.version"
             },
             "require-dev": {
                 "aws/aws-sdk-php": "^3.0",
                 "doctrine/dbal": "^2.6",
                 "filp/whoops": "^2.1.4",
+                "guzzlehttp/guzzle": "^6.3",
                 "league/flysystem-cached-adapter": "^1.0",
                 "mockery/mockery": "^1.0",
                 "moontoast/math": "^1.1",
-                "orchestra/testbench-core": "3.7.*",
-                "pda/pheanstalk": "^3.0",
-                "phpunit/phpunit": "^7.0",
+                "orchestra/testbench-core": "3.8.*",
+                "pda/pheanstalk": "^4.0",
+                "phpunit/phpunit": "^7.5|^8.0",
                 "predis/predis": "^1.1.1",
-                "symfony/css-selector": "^4.1",
-                "symfony/dom-crawler": "^4.1",
+                "symfony/css-selector": "^4.2",
+                "symfony/dom-crawler": "^4.2",
                 "true/punycode": "^2.1"
             },
             "suggest": {
@@ -650,6 +706,7 @@
                 "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.6).",
                 "ext-pcntl": "Required to use all features of the queue worker.",
                 "ext-posix": "Required to use all features of the queue worker.",
+                "filp/whoops": "Required for friendly error pages in development (^2.1.4).",
                 "fzaninotto/faker": "Required to use the eloquent factory builder (^1.4).",
                 "guzzlehttp/guzzle": "Required to use the Mailgun and Mandrill mail drivers and the ping methods on schedules (^6.0).",
                 "laravel/tinker": "Required to use the tinker console command (^1.0).",
@@ -659,17 +716,18 @@
                 "league/flysystem-sftp": "Required to use the Flysystem SFTP driver (^1.0).",
                 "moontoast/math": "Required to use ordered UUIDs (^1.1).",
                 "nexmo/client": "Required to use the Nexmo transport (^1.0).",
-                "pda/pheanstalk": "Required to use the beanstalk queue driver (^3.0).",
+                "pda/pheanstalk": "Required to use the beanstalk queue driver (^4.0).",
                 "predis/predis": "Required to use the redis cache and queue drivers (^1.0).",
                 "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^3.0).",
-                "symfony/css-selector": "Required to use some of the crawler integration testing tools (^4.1).",
-                "symfony/dom-crawler": "Required to use most of the crawler integration testing tools (^4.1).",
-                "symfony/psr-http-message-bridge": "Required to psr7 bridging features (^1.0)."
+                "symfony/css-selector": "Required to use some of the crawler integration testing tools (^4.2).",
+                "symfony/dom-crawler": "Required to use most of the crawler integration testing tools (^4.2).",
+                "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^1.1).",
+                "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.7-dev"
+                    "dev-master": "5.8-dev"
                 }
             },
             "autoload": {
@@ -681,7 +739,6 @@
                     "Illuminate\\": "src/Illuminate/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -697,26 +754,21 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-10-09T13:28:28+00:00"
+            "time": "2019-08-27T14:35:59+00:00"
         },
         {
             "name": "laravel/tinker",
-            "version": "v1.0.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/tinker.git",
-                "reference": "cafbf598a90acde68985660e79b2b03c5609a405"
-            },
+            "version": "v1.0.10",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/cafbf598a90acde68985660e79b2b03c5609a405",
-                "reference": "cafbf598a90acde68985660e79b2b03c5609a405",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/laravel/tinker/v1.0.10/laravel-tinker-v1.0.10.zip",
+                "reference": "ad571aacbac1539c30d480908f9d0c9614eaf1a7",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "~5.1",
-                "illuminate/contracts": "~5.1",
-                "illuminate/support": "~5.1",
+                "illuminate/console": "~5.1|^6.0",
+                "illuminate/contracts": "~5.1|^6.0",
+                "illuminate/support": "~5.1|^6.0",
                 "php": ">=5.5.9",
                 "psy/psysh": "0.7.*|0.8.*|0.9.*",
                 "symfony/var-dumper": "~3.0|~4.0"
@@ -743,7 +795,6 @@
                     "Laravel\\Tinker\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -760,20 +811,78 @@
                 "laravel",
                 "psysh"
             ],
-            "time": "2018-10-12T19:39:35+00:00"
+            "time": "2019-08-07T15:10:45+00:00"
+        },
+        {
+            "name": "league/csv",
+            "version": "9.3.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/league/csv/9.3.0/league-csv-9.3.0.zip",
+                "reference": "d16f85d1f958a765844db4bc7174017edf2dd637",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=7.0.10"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "friendsofphp/php-cs-fixer": "^2.12",
+                "phpstan/phpstan": "^0.9.2",
+                "phpstan/phpstan-phpunit": "^0.9.4",
+                "phpstan/phpstan-strict-rules": "^0.9.0",
+                "phpunit/phpunit": "^6.0"
+            },
+            "suggest": {
+                "ext-iconv": "Needed to ease transcoding CSV using iconv stream filters"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Csv\\": "src"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://github.com/nyamsprod/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Csv data manipulation made easy in PHP",
+            "homepage": "http://csv.thephpleague.com",
+            "keywords": [
+                "csv",
+                "export",
+                "filter",
+                "import",
+                "read",
+                "write"
+            ],
+            "time": "2019-07-30T14:39:11+00:00"
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.48",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "a6ded5b2f6055e2db97b4b859fdfca2b952b78aa"
-            },
+            "version": "1.0.55",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/a6ded5b2f6055e2db97b4b859fdfca2b952b78aa",
-                "reference": "a6ded5b2f6055e2db97b4b859fdfca2b952b78aa",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/league/flysystem/1.0.55/league-flysystem-1.0.55.zip",
+                "reference": "33c91155537c6dc899eacdc54a13ac6303f156e6",
                 "shasum": ""
             },
             "require": {
@@ -814,7 +923,6 @@
                     "League\\Flysystem\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -844,20 +952,15 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2018-10-15T13:53:10+00:00"
+            "time": "2019-08-24T11:17:19+00:00"
         },
         {
             "name": "monolog/monolog",
-            "version": "1.23.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "fd8c787753b3a2ad11bc60c063cff1358a32a3b4"
-            },
+            "version": "1.24.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/fd8c787753b3a2ad11bc60c063cff1358a32a3b4",
-                "reference": "fd8c787753b3a2ad11bc60c063cff1358a32a3b4",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/monolog/monolog/1.24.0/monolog-monolog-1.24.0.zip",
+                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
                 "shasum": ""
             },
             "require": {
@@ -904,7 +1007,6 @@
                     "Monolog\\": "src/Monolog"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -922,30 +1024,33 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2017-06-19T01:22:40+00:00"
+            "time": "2018-11-05T09:00:11+00:00"
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.34.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "1dbd3cb01c5645f3e7deda7aa46ef780d95fcc33"
-            },
+            "version": "2.24.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/1dbd3cb01c5645f3e7deda7aa46ef780d95fcc33",
-                "reference": "1dbd3cb01c5645f3e7deda7aa46ef780d95fcc33",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/nesbot/carbon/2.24.0/nesbot-carbon-2.24.0.zip",
+                "reference": "934459c5ac0658bc765ad1e53512c7c77adcac29",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9",
-                "symfony/translation": "~2.6 || ~3.0 || ~4.0"
+                "ext-json": "*",
+                "php": "^7.1.8 || ^8.0",
+                "symfony/translation": "^3.4 || ^4.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "~2",
-                "phpunit/phpunit": "^4.8.35 || ^5.7"
+                "friendsofphp/php-cs-fixer": "^2.14 || ^3.0",
+                "kylekatarnls/multi-tester": "^1.1",
+                "phpmd/phpmd": "dev-php-7.1-compatibility",
+                "phpstan/phpstan": "^0.11",
+                "phpunit/phpunit": "^7.5 || ^8.0",
+                "squizlabs/php_codesniffer": "^3.4"
             },
+            "bin": [
+                "bin/carbon"
+            ],
             "type": "library",
             "extra": {
                 "laravel": {
@@ -956,10 +1061,9 @@
             },
             "autoload": {
                 "psr-4": {
-                    "": "src/"
+                    "Carbon\\": "src/Carbon/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -968,29 +1072,28 @@
                     "name": "Brian Nesbitt",
                     "email": "brian@nesbot.com",
                     "homepage": "http://nesbot.com"
+                },
+                {
+                    "name": "kylekatarnls",
+                    "homepage": "http://github.com/kylekatarnls"
                 }
             ],
-            "description": "A simple API extension for DateTime.",
+            "description": "A API extension for DateTime that supports 281 different languages.",
             "homepage": "http://carbon.nesbot.com",
             "keywords": [
                 "date",
                 "datetime",
                 "time"
             ],
-            "time": "2018-09-20T19:36:25+00:00"
+            "time": "2019-08-31T16:37:55+00:00"
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "d0230c5c77a7e3cfa69446febf340978540958c0"
-            },
+            "version": "v4.2.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/d0230c5c77a7e3cfa69446febf340978540958c0",
-                "reference": "d0230c5c77a7e3cfa69446febf340978540958c0",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/nikic/php-parser/v4.2.4/nikic-php-parser-v4.2.4.zip",
+                "reference": "97e59c7a16464196a8b9c77c47df68e4a39a45c4",
                 "shasum": ""
             },
             "require": {
@@ -998,7 +1101,7 @@
                 "php": ">=7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.5 || ^7.0"
+                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -1006,7 +1109,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
@@ -1014,7 +1117,6 @@
                     "PhpParser\\": "lib/PhpParser"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1028,20 +1130,15 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-10-10T09:24:14+00:00"
+            "time": "2019-09-01T07:51:21+00:00"
         },
         {
             "name": "opis/closure",
-            "version": "3.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/opis/closure.git",
-                "reference": "d3209e46ad6c69a969b705df0738fd0dbe26ef9e"
-            },
+            "version": "3.3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/d3209e46ad6c69a969b705df0738fd0dbe26ef9e",
-                "reference": "d3209e46ad6c69a969b705df0738fd0dbe26ef9e",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/opis/closure/3.3.1/opis-closure-3.3.1.zip",
+                "reference": "92927e26d7fc3f271efe1f55bdbb073fbb2f0722",
                 "shasum": ""
             },
             "require": {
@@ -1049,12 +1146,12 @@
             },
             "require-dev": {
                 "jeremeamia/superclosure": "^2.0",
-                "phpunit/phpunit": "^4.0"
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0.x-dev"
+                    "dev-master": "3.3.x-dev"
                 }
             },
             "autoload": {
@@ -1065,7 +1162,6 @@
                     "functions.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1089,19 +1185,14 @@
                 "serialization",
                 "serialize"
             ],
-            "time": "2018-10-02T13:36:53+00:00"
+            "time": "2019-07-09T21:58:11+00:00"
         },
         {
             "name": "paragonie/random_compat",
             "version": "v9.99.99",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/paragonie/random_compat/v9.99.99/paragonie-random_compat-v9.99.99.zip",
                 "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
                 "shasum": ""
             },
@@ -1116,7 +1207,6 @@
                 "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
             },
             "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1137,16 +1227,55 @@
             "time": "2018-07-02T15:55:56+00:00"
         },
         {
-            "name": "psr/container",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/container.git",
-                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
-            },
+            "name": "phpoption/phpoption",
+            "version": "1.5.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/phpoption/phpoption/1.5.0/phpoption-phpoption-1.5.0.zip",
+                "reference": "94e644f7d2051a5f0fcf77d81605f152eecff0ed",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "PhpOption\\": "src/"
+                }
+            },
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Option Type for PHP",
+            "keywords": [
+                "language",
+                "option",
+                "php",
+                "type"
+            ],
+            "time": "2015-07-25T16:39:46+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "1.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/psr/container/1.0.0/psr-container-1.0.0.zip",
                 "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
                 "shasum": ""
             },
@@ -1164,7 +1293,6 @@
                     "Psr\\Container\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1187,16 +1315,11 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/log.git",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
-            },
+            "version": "1.1.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/psr/log/1.1.0/psr-log-1.1.0.zip",
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
                 "shasum": ""
             },
             "require": {
@@ -1213,7 +1336,6 @@
                     "Psr\\Log\\": "Psr/Log/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1230,19 +1352,14 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2018-11-20T15:27:04+00:00"
         },
         {
             "name": "psr/simple-cache",
             "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/simple-cache.git",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/psr/simple-cache/1.0.1/psr-simple-cache-1.0.1.zip",
                 "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
                 "shasum": ""
             },
@@ -1260,7 +1377,6 @@
                     "Psr\\SimpleCache\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1283,14 +1399,9 @@
         {
             "name": "psy/psysh",
             "version": "v0.9.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "9aaf29575bb8293206bb0420c1e1c87ff2ffa94e"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/9aaf29575bb8293206bb0420c1e1c87ff2ffa94e",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/psy/psysh/v0.9.9/psy-psysh-v0.9.9.zip",
                 "reference": "9aaf29575bb8293206bb0420c1e1c87ff2ffa94e",
                 "shasum": ""
             },
@@ -1333,7 +1444,6 @@
                     "Psy\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1357,14 +1467,9 @@
         {
             "name": "ramsey/uuid",
             "version": "3.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ramsey/uuid.git",
-                "reference": "d09ea80159c1929d75b3f9c60504d613aeb4a1e3"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/d09ea80159c1929d75b3f9c60504d613aeb4a1e3",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/ramsey/uuid/3.8.0/ramsey-uuid-3.8.0.zip",
                 "reference": "d09ea80159c1929d75b3f9c60504d613aeb4a1e3",
                 "shasum": ""
             },
@@ -1372,9 +1477,6 @@
                 "paragonie/random_compat": "^1.0|^2.0|9.99.99",
                 "php": "^5.4 || ^7.0",
                 "symfony/polyfill-ctype": "^1.8"
-            },
-            "replace": {
-                "rhumsaa/uuid": "self.version"
             },
             "require-dev": {
                 "codeception/aspect-mock": "^1.0 | ~2.0.0",
@@ -1408,7 +1510,6 @@
                     "Ramsey\\Uuid\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1438,25 +1539,23 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v6.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "8ddcb66ac10c392d3beb54829eef8ac1438595f4"
-            },
+            "version": "v6.2.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/8ddcb66ac10c392d3beb54829eef8ac1438595f4",
-                "reference": "8ddcb66ac10c392d3beb54829eef8ac1438595f4",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/swiftmailer/swiftmailer/v6.2.1/swiftmailer-swiftmailer-v6.2.1.zip",
+                "reference": "5397cd05b0a0f7937c47b0adcb4c60e5ab936b6a",
                 "shasum": ""
             },
             "require": {
                 "egulias/email-validator": "~2.0",
-                "php": ">=7.0.0"
+                "php": ">=7.0.0",
+                "symfony/polyfill-iconv": "^1.0",
+                "symfony/polyfill-intl-idn": "^1.10",
+                "symfony/polyfill-mbstring": "^1.0"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9.1",
-                "symfony/phpunit-bridge": "~3.3@dev"
+                "symfony/phpunit-bridge": "^3.4.19|^4.1.8"
             },
             "suggest": {
                 "ext-intl": "Needed to support internationalized email addresses",
@@ -1465,7 +1564,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.1-dev"
+                    "dev-master": "6.2-dev"
                 }
             },
             "autoload": {
@@ -1473,7 +1572,6 @@
                     "lib/swift_required.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1493,40 +1591,42 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2018-09-11T07:12:52+00:00"
+            "time": "2019-04-21T09:21:45+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v4.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/console.git",
-                "reference": "dc7122fe5f6113cfaba3b3de575d31112c9aa60b"
-            },
+            "version": "v4.3.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/dc7122fe5f6113cfaba3b3de575d31112c9aa60b",
-                "reference": "dc7122fe5f6113cfaba3b3de575d31112c9aa60b",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/console/v4.3.4/symfony-console-v4.3.4.zip",
+                "reference": "de63799239b3881b8a08f8481b22348f77ed7b36",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3",
-                "symfony/polyfill-mbstring": "~1.0"
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php73": "^1.8",
+                "symfony/service-contracts": "^1.1"
             },
             "conflict": {
                 "symfony/dependency-injection": "<3.4",
+                "symfony/event-dispatcher": "<4.3",
                 "symfony/process": "<3.3"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~3.4|~4.0",
                 "symfony/dependency-injection": "~3.4|~4.0",
-                "symfony/event-dispatcher": "~3.4|~4.0",
+                "symfony/event-dispatcher": "^4.3",
                 "symfony/lock": "~3.4|~4.0",
-                "symfony/process": "~3.4|~4.0"
+                "symfony/process": "~3.4|~4.0",
+                "symfony/var-dumper": "^4.3"
             },
             "suggest": {
-                "psr/log-implementation": "For using the console logger",
+                "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": "",
                 "symfony/lock": "",
                 "symfony/process": ""
@@ -1534,7 +1634,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -1545,7 +1645,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1561,20 +1660,15 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-03T08:15:46+00:00"
+            "time": "2019-08-26T08:26:39+00:00"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v4.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/css-selector.git",
-                "reference": "d67de79a70a27d93c92c47f37ece958bf8de4d8a"
-            },
+            "version": "v4.3.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/css-selector/zipball/d67de79a70a27d93c92c47f37ece958bf8de4d8a",
-                "reference": "d67de79a70a27d93c92c47f37ece958bf8de4d8a",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/css-selector/v4.3.4/symfony-css-selector-v4.3.4.zip",
+                "reference": "c6e5e2a00db768c92c3ae131532af4e1acc7bd03",
                 "shasum": ""
             },
             "require": {
@@ -1583,7 +1677,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -1594,18 +1688,17 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Jean-François Simon",
-                    "email": "jeanfrancois.simon@sensiolabs.com"
-                },
-                {
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
                 },
                 {
                     "name": "Symfony Community",
@@ -1614,20 +1707,15 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T16:36:10+00:00"
+            "time": "2019-08-20T14:07:54+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v4.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/debug.git",
-                "reference": "e3f76ce6198f81994e019bb2b4e533e9de1b9b90"
-            },
+            "version": "v4.3.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/e3f76ce6198f81994e019bb2b4e533e9de1b9b90",
-                "reference": "e3f76ce6198f81994e019bb2b4e533e9de1b9b90",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/debug/v4.3.4/symfony-debug-v4.3.4.zip",
+                "reference": "afcdea44a2e399c1e4b52246ec8d54c715393ced",
                 "shasum": ""
             },
             "require": {
@@ -1643,7 +1731,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -1654,7 +1742,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1670,33 +1757,35 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T16:36:10+00:00"
+            "time": "2019-08-20T14:27:59+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v4.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "bfb30c2ad377615a463ebbc875eba64a99f6aa3e"
-            },
+            "version": "v4.3.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/bfb30c2ad377615a463ebbc875eba64a99f6aa3e",
-                "reference": "bfb30c2ad377615a463ebbc875eba64a99f6aa3e",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/event-dispatcher/v4.3.4/symfony-event-dispatcher-v4.3.4.zip",
+                "reference": "429d0a1451d4c9c4abe1959b2986b88794b9b7d2",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": "^7.1.3",
+                "symfony/event-dispatcher-contracts": "^1.1"
             },
             "conflict": {
                 "symfony/dependency-injection": "<3.4"
+            },
+            "provide": {
+                "psr/event-dispatcher-implementation": "1.0",
+                "symfony/event-dispatcher-implementation": "1.1"
             },
             "require-dev": {
                 "psr/log": "~1.0",
                 "symfony/config": "~3.4|~4.0",
                 "symfony/dependency-injection": "~3.4|~4.0",
                 "symfony/expression-language": "~3.4|~4.0",
+                "symfony/http-foundation": "^3.4|^4.0",
+                "symfony/service-contracts": "^1.1",
                 "symfony/stopwatch": "~3.4|~4.0"
             },
             "suggest": {
@@ -1706,7 +1795,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -1717,7 +1806,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1733,20 +1821,67 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T09:10:45+00:00"
+            "time": "2019-08-26T08:55:16+00:00"
+        },
+        {
+            "name": "symfony/event-dispatcher-contracts",
+            "version": "v1.1.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/event-dispatcher-contracts/v1.1.5/symfony-event-dispatcher-contracts-v1.1.5.zip",
+                "reference": "c61766f4440ca687de1084a5c00b08e167a2575c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "suggest": {
+                "psr/event-dispatcher": "",
+                "symfony/event-dispatcher-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\EventDispatcher\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to dispatching event",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "time": "2019-06-20T06:46:26+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/finder.git",
-                "reference": "1f17195b44543017a9c9b2d437c670627e96ad06"
-            },
+            "version": "v4.3.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/1f17195b44543017a9c9b2d437c670627e96ad06",
-                "reference": "1f17195b44543017a9c9b2d437c670627e96ad06",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/finder/v4.3.4/symfony-finder-v4.3.4.zip",
+                "reference": "86c1c929f0a4b24812e1eb109262fc3372c8e9f2",
                 "shasum": ""
             },
             "require": {
@@ -1755,7 +1890,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -1766,7 +1901,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1782,24 +1916,20 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-03T08:47:56+00:00"
+            "time": "2019-08-14T12:26:46+00:00"
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v4.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "d528136617ff24f530e70df9605acc1b788b08d4"
-            },
+            "version": "v4.3.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/d528136617ff24f530e70df9605acc1b788b08d4",
-                "reference": "d528136617ff24f530e70df9605acc1b788b08d4",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/http-foundation/v4.3.4/symfony-http-foundation-v4.3.4.zip",
+                "reference": "d804bea118ff340a12e22a79f9c7e7eb56b35adc",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3",
+                "symfony/mime": "^4.3",
                 "symfony/polyfill-mbstring": "~1.1"
             },
             "require-dev": {
@@ -1809,7 +1939,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -1820,7 +1950,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1836,33 +1965,31 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-03T08:48:45+00:00"
+            "time": "2019-08-26T08:55:16+00:00"
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v4.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "f5e7c15a5d010be0e16ce798594c5960451d4220"
-            },
+            "version": "v4.3.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/f5e7c15a5d010be0e16ce798594c5960451d4220",
-                "reference": "f5e7c15a5d010be0e16ce798594c5960451d4220",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/http-kernel/v4.3.4/symfony-http-kernel-v4.3.4.zip",
+                "reference": "5e0fc71be03d52cd00c423061cfd300bd6f92a52",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3",
                 "psr/log": "~1.0",
                 "symfony/debug": "~3.4|~4.0",
-                "symfony/event-dispatcher": "~4.1",
+                "symfony/event-dispatcher": "^4.3",
                 "symfony/http-foundation": "^4.1.1",
-                "symfony/polyfill-ctype": "~1.8"
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-php73": "^1.9"
             },
             "conflict": {
+                "symfony/browser-kit": "<4.3",
                 "symfony/config": "<3.4",
-                "symfony/dependency-injection": "<4.1",
+                "symfony/dependency-injection": "<4.3",
+                "symfony/translation": "<4.2",
                 "symfony/var-dumper": "<4.1.1",
                 "twig/twig": "<1.34|<2.4,>=2"
             },
@@ -1871,11 +1998,11 @@
             },
             "require-dev": {
                 "psr/cache": "~1.0",
-                "symfony/browser-kit": "~3.4|~4.0",
+                "symfony/browser-kit": "^4.3",
                 "symfony/config": "~3.4|~4.0",
                 "symfony/console": "~3.4|~4.0",
                 "symfony/css-selector": "~3.4|~4.0",
-                "symfony/dependency-injection": "^4.1",
+                "symfony/dependency-injection": "^4.3",
                 "symfony/dom-crawler": "~3.4|~4.0",
                 "symfony/expression-language": "~3.4|~4.0",
                 "symfony/finder": "~3.4|~4.0",
@@ -1883,8 +2010,10 @@
                 "symfony/routing": "~3.4|~4.0",
                 "symfony/stopwatch": "~3.4|~4.0",
                 "symfony/templating": "~3.4|~4.0",
-                "symfony/translation": "~3.4|~4.0",
-                "symfony/var-dumper": "^4.1.1"
+                "symfony/translation": "~4.2",
+                "symfony/translation-contracts": "^1.1",
+                "symfony/var-dumper": "^4.1.1",
+                "twig/twig": "^1.34|^2.4"
             },
             "suggest": {
                 "symfony/browser-kit": "",
@@ -1896,7 +2025,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -1907,7 +2036,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1923,20 +2051,68 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-03T12:53:38+00:00"
+            "time": "2019-08-26T16:47:42+00:00"
+        },
+        {
+            "name": "symfony/mime",
+            "version": "v4.3.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/mime/v4.3.4/symfony-mime-v4.3.4.zip",
+                "reference": "987a05df1c6ac259b34008b932551353f4f408df",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/polyfill-intl-idn": "^1.10",
+                "symfony/polyfill-mbstring": "^1.0"
+            },
+            "require-dev": {
+                "egulias/email-validator": "^2.1.10",
+                "symfony/dependency-injection": "~3.4|^4.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Mime\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A library to manipulate MIME messages",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "mime",
+                "mime-type"
+            ],
+            "time": "2019-08-22T08:16:11+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
-            },
+            "version": "v1.12.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
-                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/polyfill-ctype/v1.12.0/symfony-polyfill-ctype-v1.12.0.zip",
+                "reference": "550ebaac289296ce228a706d0867afc34687e3f4",
                 "shasum": ""
             },
             "require": {
@@ -1948,7 +2124,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.12-dev"
                 }
             },
             "autoload": {
@@ -1959,18 +2135,17 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                },
-                {
                     "name": "Gert de Pagter",
                     "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -1981,20 +2156,124 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2018-08-06T14:22:27+00:00"
+            "time": "2019-08-06T08:03:45+00:00"
+        },
+        {
+            "name": "symfony/polyfill-iconv",
+            "version": "v1.12.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/polyfill-iconv/v1.12.0/symfony-polyfill-iconv-v1.12.0.zip",
+                "reference": "685968b11e61a347c18bf25db32effa478be610f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-iconv": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.12-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Iconv\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Iconv extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "iconv",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2019-08-06T08:03:45+00:00"
+        },
+        {
+            "name": "symfony/polyfill-intl-idn",
+            "version": "v1.12.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/polyfill-intl-idn/v1.12.0/symfony-polyfill-intl-idn-v1.12.0.zip",
+                "reference": "6af626ae6fa37d396dc90a399c0ff08e5cfc45b2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/polyfill-mbstring": "^1.3",
+                "symfony/polyfill-php72": "^1.9"
+            },
+            "suggest": {
+                "ext-intl": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.12-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Idn\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Laurent Bassin",
+                    "email": "laurent@bassin.info"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for intl's idn_to_ascii and idn_to_utf8 functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "idn",
+                "intl",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2019-08-06T08:03:45+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "d0cd638f4634c16d8df4508e847f14e9e43168b8"
-            },
+            "version": "v1.12.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/d0cd638f4634c16d8df4508e847f14e9e43168b8",
-                "reference": "d0cd638f4634c16d8df4508e847f14e9e43168b8",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/polyfill-mbstring/v1.12.0/symfony-polyfill-mbstring-v1.12.0.zip",
+                "reference": "b42a2f66e8f1b15ccf25652c3424265923eb4f17",
                 "shasum": ""
             },
             "require": {
@@ -2006,7 +2285,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.12-dev"
                 }
             },
             "autoload": {
@@ -2017,7 +2296,6 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2040,20 +2318,15 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-08-06T14:22:27+00:00"
+            "time": "2019-08-06T08:03:45+00:00"
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php72.git",
-                "reference": "95c50420b0baed23852452a7f0c7b527303ed5ae"
-            },
+            "version": "v1.12.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/95c50420b0baed23852452a7f0c7b527303ed5ae",
-                "reference": "95c50420b0baed23852452a7f0c7b527303ed5ae",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/polyfill-php72/v1.12.0/symfony-polyfill-php72-v1.12.0.zip",
+                "reference": "04ce3335667451138df4307d6a9b61565560199e",
                 "shasum": ""
             },
             "require": {
@@ -2062,7 +2335,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.12-dev"
                 }
             },
             "autoload": {
@@ -2073,7 +2346,6 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2095,20 +2367,67 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-08-06T14:22:27+00:00"
+            "time": "2019-08-06T08:03:45+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php73",
+            "version": "v1.12.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/polyfill-php73/v1.12.0/symfony-polyfill-php73-v1.12.0.zip",
+                "reference": "2ceb49eaccb9352bff54d22570276bb75ba4a188",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.12-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php73\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 7.3+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2019-08-06T08:03:45+00:00"
         },
         {
             "name": "symfony/process",
-            "version": "v4.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/process.git",
-                "reference": "ee33c0322a8fee0855afcc11fff81e6b1011b529"
-            },
+            "version": "v4.3.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/ee33c0322a8fee0855afcc11fff81e6b1011b529",
-                "reference": "ee33c0322a8fee0855afcc11fff81e6b1011b529",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/process/v4.3.4/symfony-process-v4.3.4.zip",
+                "reference": "e89969c00d762349f078db1128506f7f3dcc0d4a",
                 "shasum": ""
             },
             "require": {
@@ -2117,7 +2436,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -2128,7 +2447,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2144,34 +2462,29 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T12:40:59+00:00"
+            "time": "2019-08-26T08:26:39+00:00"
         },
         {
             "name": "symfony/routing",
-            "version": "v4.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/routing.git",
-                "reference": "537803f0bdfede36b9acef052d2e4d447d9fa0e9"
-            },
+            "version": "v4.3.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/537803f0bdfede36b9acef052d2e4d447d9fa0e9",
-                "reference": "537803f0bdfede36b9acef052d2e4d447d9fa0e9",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/routing/v4.3.4/symfony-routing-v4.3.4.zip",
+                "reference": "ff1049f6232dc5b6023b1ff1c6de56f82bcd264f",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3"
             },
             "conflict": {
-                "symfony/config": "<3.4",
+                "symfony/config": "<4.2",
                 "symfony/dependency-injection": "<3.4",
                 "symfony/yaml": "<3.4"
             },
             "require-dev": {
-                "doctrine/annotations": "~1.0",
+                "doctrine/annotations": "~1.2",
                 "psr/log": "~1.0",
-                "symfony/config": "~3.4|~4.0",
+                "symfony/config": "~4.2",
                 "symfony/dependency-injection": "~3.4|~4.0",
                 "symfony/expression-language": "~3.4|~4.0",
                 "symfony/http-foundation": "~3.4|~4.0",
@@ -2180,7 +2493,6 @@
             "suggest": {
                 "doctrine/annotations": "For using the annotation loader",
                 "symfony/config": "For using the all-in-one router or any loader",
-                "symfony/dependency-injection": "For loading routes from a service",
                 "symfony/expression-language": "For using expression matching",
                 "symfony/http-foundation": "For using a Symfony Request object",
                 "symfony/yaml": "For using the YAML loader"
@@ -2188,7 +2500,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -2199,7 +2511,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2221,30 +2532,81 @@
                 "uri",
                 "url"
             ],
-            "time": "2018-10-02T12:40:59+00:00"
+            "time": "2019-08-26T08:26:39+00:00"
         },
         {
-            "name": "symfony/translation",
-            "version": "v4.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/translation.git",
-                "reference": "9f0b61e339160a466ebcde167a6c5521c810e304"
-            },
+            "name": "symfony/service-contracts",
+            "version": "v1.1.6",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/9f0b61e339160a466ebcde167a6c5521c810e304",
-                "reference": "9f0b61e339160a466ebcde167a6c5521c810e304",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/service-contracts/v1.1.6/symfony-service-contracts-v1.1.6.zip",
+                "reference": "ea7263d6b6d5f798b56a45a5b8d686725f2719a3",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3",
-                "symfony/polyfill-mbstring": "~1.0"
+                "psr/container": "^1.0"
+            },
+            "suggest": {
+                "symfony/service-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\Service\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to writing services",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "time": "2019-08-20T14:44:19+00:00"
+        },
+        {
+            "name": "symfony/translation",
+            "version": "v4.3.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/translation/v4.3.4/symfony-translation-v4.3.4.zip",
+                "reference": "28498169dd334095fa981827992f3a24d50fed0f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/translation-contracts": "^1.1.6"
             },
             "conflict": {
                 "symfony/config": "<3.4",
                 "symfony/dependency-injection": "<3.4",
                 "symfony/yaml": "<3.4"
+            },
+            "provide": {
+                "symfony/translation-implementation": "1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
@@ -2252,7 +2614,10 @@
                 "symfony/console": "~3.4|~4.0",
                 "symfony/dependency-injection": "~3.4|~4.0",
                 "symfony/finder": "~2.8|~3.0|~4.0",
+                "symfony/http-kernel": "~3.4|~4.0",
                 "symfony/intl": "~3.4|~4.0",
+                "symfony/service-contracts": "^1.1.2",
+                "symfony/var-dumper": "~3.4|~4.0",
                 "symfony/yaml": "~3.4|~4.0"
             },
             "suggest": {
@@ -2263,7 +2628,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -2274,7 +2639,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2290,20 +2654,66 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-02T16:36:10+00:00"
+            "time": "2019-08-26T08:55:16+00:00"
+        },
+        {
+            "name": "symfony/translation-contracts",
+            "version": "v1.1.6",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/translation-contracts/v1.1.6/symfony-translation-contracts-v1.1.6.zip",
+                "reference": "325b17c24f3ee23cbecfa63ba809c6d89b5fa04a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "suggest": {
+                "symfony/translation-implementation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Contracts\\Translation\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Generic abstractions related to translation",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "time": "2019-08-02T12:15:04+00:00"
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v4.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "60319b45653580b0cdacca499344577d87732f16"
-            },
+            "version": "v4.3.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/60319b45653580b0cdacca499344577d87732f16",
-                "reference": "60319b45653580b0cdacca499344577d87732f16",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/symfony/var-dumper/v4.3.4/symfony-var-dumper-v4.3.4.zip",
+                "reference": "641043e0f3e615990a0f29479f9c117e8a6698c6",
                 "shasum": ""
             },
             "require": {
@@ -2317,6 +2727,7 @@
             },
             "require-dev": {
                 "ext-iconv": "*",
+                "symfony/console": "~3.4|~4.0",
                 "symfony/process": "~3.4|~4.0",
                 "twig/twig": "~1.34|~2.4"
             },
@@ -2331,7 +2742,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -2345,7 +2756,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2365,19 +2775,14 @@
                 "debug",
                 "dump"
             ],
-            "time": "2018-10-02T16:36:10+00:00"
+            "time": "2019-08-26T08:26:39+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tijsverkoyen/CssToInlineStyles.git",
-                "reference": "0ed4a2ea4e0902dac0489e6436ebcd5bbcae9757"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tijsverkoyen/CssToInlineStyles/zipball/0ed4a2ea4e0902dac0489e6436ebcd5bbcae9757",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/tijsverkoyen/css-to-inline-styles/2.2.1/tijsverkoyen-css-to-inline-styles-2.2.1.zip",
                 "reference": "0ed4a2ea4e0902dac0489e6436ebcd5bbcae9757",
                 "shasum": ""
             },
@@ -2399,15 +2804,14 @@
                     "TijsVerkoyen\\CssToInlineStyles\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
                     "name": "Tijs Verkoyen",
-                    "email": "css_to_inline_styles@verkoyen.eu",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "css_to_inline_styles@verkoyen.eu"
                 }
             ],
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
@@ -2416,28 +2820,25 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.5.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e"
-            },
+            "version": "v3.5.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
-                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/vlucas/phpdotenv/v3.5.0/vlucas-phpdotenv-v3.5.0.zip",
+                "reference": "95cb0fa6c025f7f0db7fc60f81e9fb231eb2d222",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": "^5.4 || ^7.0",
+                "phpoption/phpoption": "^1.5",
+                "symfony/polyfill-ctype": "^1.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.0"
+                "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "3.5-dev"
                 }
             },
             "autoload": {
@@ -2445,15 +2846,19 @@
                     "Dotenv\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
+                    "homepage": "https://gjcampbell.co.uk/"
+                },
+                {
                     "name": "Vance Lucas",
                     "email": "vance@vancelucas.com",
-                    "homepage": "http://www.vancelucas.com"
+                    "homepage": "https://vancelucas.com/"
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
@@ -2462,28 +2867,23 @@
                 "env",
                 "environment"
             ],
-            "time": "2018-07-29T20:33:41+00:00"
+            "time": "2019-08-27T17:00:38+00:00"
         }
     ],
     "packages-dev": [
         {
             "name": "beyondcode/laravel-dump-server",
-            "version": "1.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/beyondcode/laravel-dump-server.git",
-                "reference": "8864b9efcb48e0a79e83014dd7f0a5481f5c808f"
-            },
+            "version": "1.3.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/beyondcode/laravel-dump-server/zipball/8864b9efcb48e0a79e83014dd7f0a5481f5c808f",
-                "reference": "8864b9efcb48e0a79e83014dd7f0a5481f5c808f",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/beyondcode/laravel-dump-server/1.3.0/beyondcode-laravel-dump-server-1.3.0.zip",
+                "reference": "fcc88fa66895f8c1ff83f6145a5eff5fa2a0739a",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "5.6.*|5.7.*|5.8.*",
-                "illuminate/http": "5.6.*|5.7.*|5.8.*",
-                "illuminate/support": "5.6.*|5.7.*|5.8.*",
+                "illuminate/console": "5.6.*|5.7.*|5.8.*|^6.0",
+                "illuminate/http": "5.6.*|5.7.*|5.8.*|^6.0",
+                "illuminate/support": "5.6.*|5.7.*|5.8.*|^6.0",
                 "php": "^7.1",
                 "symfony/var-dumper": "^4.1.1"
             },
@@ -2507,16 +2907,15 @@
                     "helpers.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
                     "name": "Marcel Pociot",
+                    "role": "Developer",
                     "email": "marcel@beyondco.de",
-                    "homepage": "https://beyondcode.de",
-                    "role": "Developer"
+                    "homepage": "https://beyondco.de"
                 }
             ],
             "description": "Symfony Var-Dump Server for Laravel",
@@ -2525,31 +2924,28 @@
                 "beyondcode",
                 "laravel-dump-server"
             ],
-            "time": "2018-10-04T07:22:24+00:00"
+            "time": "2019-08-11T13:17:40+00:00"
         },
         {
             "name": "doctrine/instantiator",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda"
-            },
+            "version": "1.2.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
-                "reference": "185b8868aa9bf7159f5f953ed5afb2d7fcdc3bda",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/doctrine/instantiator/1.2.0/doctrine-instantiator-1.2.0.zip",
+                "reference": "a2c590166b2133a4633738648b6b064edae0814a",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1"
             },
             "require-dev": {
-                "athletic/athletic": "~0.1.8",
+                "doctrine/coding-standard": "^6.0",
                 "ext-pdo": "*",
                 "ext-phar": "*",
-                "phpunit/phpunit": "^6.2.3",
-                "squizlabs/php_codesniffer": "^3.0.2"
+                "phpbench/phpbench": "^0.13",
+                "phpstan/phpstan-phpunit": "^0.11",
+                "phpstan/phpstan-shim": "^0.11",
+                "phpunit/phpunit": "^7.0"
             },
             "type": "library",
             "extra": {
@@ -2562,7 +2958,6 @@
                     "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2574,25 +2969,20 @@
                 }
             ],
             "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
-            "homepage": "https://github.com/doctrine/instantiator",
+            "homepage": "https://www.doctrine-project.org/projects/instantiator.html",
             "keywords": [
                 "constructor",
                 "instantiate"
             ],
-            "time": "2017-07-22T11:58:36+00:00"
+            "time": "2019-03-17T17:37:11+00:00"
         },
         {
             "name": "filp/whoops",
-            "version": "2.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/filp/whoops.git",
-                "reference": "e79cd403fb77fc8963a99ecc30e80ddd885b3311"
-            },
+            "version": "2.5.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/e79cd403fb77fc8963a99ecc30e80ddd885b3311",
-                "reference": "e79cd403fb77fc8963a99ecc30e80ddd885b3311",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/filp/whoops/2.5.0/filp-whoops-2.5.0.zip",
+                "reference": "cde50e6720a39fdacb240159d3eea6865d51fd96",
                 "shasum": ""
             },
             "require": {
@@ -2619,15 +3009,14 @@
                     "Whoops\\": "src/Whoops/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
                     "name": "Filipe Dobreira",
-                    "homepage": "https://github.com/filp",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "homepage": "https://github.com/filp"
                 }
             ],
             "description": "php error handling for cool kids",
@@ -2640,19 +3029,14 @@
                 "throwable",
                 "whoops"
             ],
-            "time": "2018-06-30T13:14:06+00:00"
+            "time": "2019-08-07T09:00:00+00:00"
         },
         {
             "name": "fzaninotto/faker",
             "version": "v1.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/f72816b43e74063c8b10357394b6bba8cb1c10de",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/fzaninotto/faker/v1.8.0/fzaninotto-faker-v1.8.0.zip",
                 "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de",
                 "shasum": ""
             },
@@ -2675,7 +3059,6 @@
                     "Faker\\": "src/Faker/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2695,24 +3078,14 @@
         {
             "name": "hamcrest/hamcrest-php",
             "version": "v2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hamcrest/hamcrest-php.git",
-                "reference": "776503d3a8e85d4f9a1148614f95b7a608b046ad"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hamcrest/hamcrest-php/zipball/776503d3a8e85d4f9a1148614f95b7a608b046ad",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/hamcrest/hamcrest-php/v2.0.0/hamcrest-hamcrest-php-v2.0.0.zip",
                 "reference": "776503d3a8e85d4f9a1148614f95b7a608b046ad",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.3|^7.0"
-            },
-            "replace": {
-                "cordoval/hamcrest-php": "*",
-                "davedevelopment/hamcrest-php": "*",
-                "kodova/hamcrest-php": "*"
             },
             "require-dev": {
                 "phpunit/php-file-iterator": "1.3.3",
@@ -2730,7 +3103,6 @@
                     "hamcrest"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD"
             ],
@@ -2741,17 +3113,144 @@
             "time": "2016-01-20T08:20:44+00:00"
         },
         {
-            "name": "mockery/mockery",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mockery/mockery.git",
-                "reference": "100633629bf76d57430b86b7098cd6beb996a35a"
-            },
+            "name": "illuminate/filesystem",
+            "version": "v5.8.34",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/100633629bf76d57430b86b7098cd6beb996a35a",
-                "reference": "100633629bf76d57430b86b7098cd6beb996a35a",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/illuminate/filesystem/v5.8.34/illuminate-filesystem-v5.8.34.zip",
+                "reference": "494ba903402d64ec49c8d869ab61791db34b2288",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.8.*",
+                "illuminate/support": "5.8.*",
+                "php": "^7.1.3",
+                "symfony/finder": "^4.2"
+            },
+            "suggest": {
+                "league/flysystem": "Required to use the Flysystem local and FTP drivers (^1.0).",
+                "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^1.0).",
+                "league/flysystem-cached-adapter": "Required to use the Flysystem cache (^1.0).",
+                "league/flysystem-rackspace": "Required to use the Flysystem Rackspace driver (^1.0).",
+                "league/flysystem-sftp": "Required to use the Flysystem SFTP driver (^1.0)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Filesystem\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Filesystem package.",
+            "homepage": "https://laravel.com",
+            "time": "2019-08-14T13:38:15+00:00"
+        },
+        {
+            "name": "illuminate/http",
+            "version": "v5.8.34",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/illuminate/http/v5.8.34/illuminate-http-v5.8.34.zip",
+                "reference": "1d6db7162ffdd2f4f69aa7d10bf0a56ecd98ae28",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/session": "5.8.*",
+                "illuminate/support": "5.8.*",
+                "php": "^7.1.3",
+                "symfony/http-foundation": "^4.2",
+                "symfony/http-kernel": "^4.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Http\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Http package.",
+            "homepage": "https://laravel.com",
+            "time": "2019-07-30T21:54:19+00:00"
+        },
+        {
+            "name": "illuminate/session",
+            "version": "v5.8.34",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/illuminate/session/v5.8.34/illuminate-session-v5.8.34.zip",
+                "reference": "087d360f7b9d75bc964280b890c2f2fe8efaf71f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/contracts": "5.8.*",
+                "illuminate/filesystem": "5.8.*",
+                "illuminate/support": "5.8.*",
+                "php": "^7.1.3",
+                "symfony/finder": "^4.2",
+                "symfony/http-foundation": "^4.2"
+            },
+            "suggest": {
+                "illuminate/console": "Required to use the session:table command (5.8.*)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Session\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Session package.",
+            "homepage": "https://laravel.com",
+            "time": "2019-07-08T13:48:55+00:00"
+        },
+        {
+            "name": "mockery/mockery",
+            "version": "1.2.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/mockery/mockery/1.2.3/mockery-mockery-1.2.3.zip",
+                "reference": "4eff936d83eb809bde2c57a3cea0ee9643769031",
                 "shasum": ""
             },
             "require": {
@@ -2760,7 +3259,7 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~5.7.10|~6.5|~7.0"
+                "phpunit/phpunit": "~5.7.10|~6.5|~7.0|~8.0"
             },
             "type": "library",
             "extra": {
@@ -2773,7 +3272,6 @@
                     "Mockery": "library/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2803,27 +3301,19 @@
                 "test double",
                 "testing"
             ],
-            "time": "2018-10-02T21:52:37+00:00"
+            "time": "2019-08-07T15:01:07+00:00"
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.8.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8"
-            },
+            "version": "1.9.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8",
-                "reference": "3e01bdad3e18354c3dce54466b7fbe33a9f9f7f8",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/myclabs/deep-copy/1.9.3/myclabs-deep-copy-1.9.3.zip",
+                "reference": "007c053ae6f31bba39dfa19a7726f56e9763bbea",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1"
-            },
-            "replace": {
-                "myclabs/deep-copy": "self.version"
             },
             "require-dev": {
                 "doctrine/collections": "^1.0",
@@ -2839,7 +3329,6 @@
                     "src/DeepCopy/deep_copy.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2851,30 +3340,26 @@
                 "object",
                 "object graph"
             ],
-            "time": "2018-06-11T23:09:50+00:00"
+            "time": "2019-08-09T12:45:53+00:00"
         },
         {
             "name": "nunomaduro/collision",
-            "version": "v2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nunomaduro/collision.git",
-                "reference": "1149ad9f36f61b121ae61f5f6de820fc77b51e6b"
-            },
+            "version": "v2.1.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/1149ad9f36f61b121ae61f5f6de820fc77b51e6b",
-                "reference": "1149ad9f36f61b121ae61f5f6de820fc77b51e6b",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/nunomaduro/collision/v2.1.1/nunomaduro-collision-v2.1.1.zip",
+                "reference": "b5feb0c0d92978ec7169232ce5d70d6da6b29f63",
                 "shasum": ""
             },
             "require": {
                 "filp/whoops": "^2.1.4",
-                "jakub-onderka/php-console-highlighter": "0.3.*",
+                "jakub-onderka/php-console-highlighter": "0.3.*|0.4.*",
                 "php": "^7.1",
                 "symfony/console": "~2.8|~3.3|~4.0"
             },
             "require-dev": {
                 "laravel/framework": "5.7.*",
+                "nunomaduro/larastan": "^0.3.0",
                 "phpstan/phpstan": "^0.10",
                 "phpunit/phpunit": "~7.3"
             },
@@ -2891,7 +3376,6 @@
                     "NunoMaduro\\Collision\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2914,19 +3398,14 @@
                 "php",
                 "symfony"
             ],
-            "time": "2018-10-03T20:01:54+00:00"
+            "time": "2018-11-21T21:40:54+00:00"
         },
         {
             "name": "phar-io/manifest",
             "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phar-io/manifest.git",
-                "reference": "7761fcacf03b4d4f16e7ccb606d4879ca431fcf4"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phar-io/manifest/zipball/7761fcacf03b4d4f16e7ccb606d4879ca431fcf4",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/phar-io/manifest/1.0.3/phar-io-manifest-1.0.3.zip",
                 "reference": "7761fcacf03b4d4f16e7ccb606d4879ca431fcf4",
                 "shasum": ""
             },
@@ -2947,25 +3426,24 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 },
                 {
                     "name": "Sebastian Heuer",
-                    "email": "sebastian@phpeople.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpeople.de"
                 },
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
@@ -2974,14 +3452,9 @@
         {
             "name": "phar-io/version",
             "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phar-io/version.git",
-                "reference": "45a2ec53a73c70ce41d55cedef9063630abaf1b6"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phar-io/version/zipball/45a2ec53a73c70ce41d55cedef9063630abaf1b6",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/phar-io/version/2.0.1/phar-io-version-2.0.1.zip",
                 "reference": "45a2ec53a73c70ce41d55cedef9063630abaf1b6",
                 "shasum": ""
             },
@@ -2994,7 +3467,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3021,14 +3493,9 @@
         {
             "name": "phpdocumentor/reflection-common",
             "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
-                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/phpdocumentor/reflection-common/1.0.1/phpdocumentor-reflection-common-1.0.1.zip",
                 "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
                 "shasum": ""
             },
@@ -3051,7 +3518,6 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3074,16 +3540,11 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "4.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "94fd0001232e47129dd3504189fa1c7225010d08"
-            },
+            "version": "4.3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/94fd0001232e47129dd3504189fa1c7225010d08",
-                "reference": "94fd0001232e47129dd3504189fa1c7225010d08",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/phpdocumentor/reflection-docblock/4.3.1/phpdocumentor-reflection-docblock-4.3.1.zip",
+                "reference": "bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c",
                 "shasum": ""
             },
             "require": {
@@ -3110,7 +3571,6 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3121,19 +3581,14 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2017-11-30T07:14:17+00:00"
+            "time": "2019-04-30T17:48:53+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
             "version": "0.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/phpdocumentor/type-resolver/0.4.0/phpdocumentor-type-resolver-0.4.0.zip",
                 "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
                 "shasum": ""
             },
@@ -3158,7 +3613,6 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3172,16 +3626,11 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06"
-            },
+            "version": "1.8.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
-                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/phpspec/prophecy/1.8.1/phpspec-prophecy-1.8.1.zip",
+                "reference": "1927e75f4ed19131ec9bcc3b002e07fb1173ee76",
                 "shasum": ""
             },
             "require": {
@@ -3202,11 +3651,10 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Prophecy\\": "src/"
+                "psr-4": {
+                    "Prophecy\\": "src/Prophecy"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3231,20 +3679,15 @@
                 "spy",
                 "stub"
             ],
-            "time": "2018-08-05T17:53:17+00:00"
+            "time": "2019-06-13T12:50:23+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "6.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "b097681a19a48e52706f57e47a09594bac4f7cab"
-            },
+            "version": "6.1.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/b097681a19a48e52706f57e47a09594bac4f7cab",
-                "reference": "b097681a19a48e52706f57e47a09594bac4f7cab",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/phpunit/php-code-coverage/6.1.4/phpunit-php-code-coverage-6.1.4.zip",
+                "reference": "807e6013b00af69b6c5d9ceb4282d0393dbb9d8d",
                 "shasum": ""
             },
             "require": {
@@ -3276,7 +3719,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3294,19 +3736,14 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-10-18T09:01:38+00:00"
+            "time": "2018-10-31T16:06:48+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
             "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "050bedf145a257b1ff02746c31894800e5122946"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/050bedf145a257b1ff02746c31894800e5122946",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/phpunit/php-file-iterator/2.0.2/phpunit-php-file-iterator-2.0.2.zip",
                 "reference": "050bedf145a257b1ff02746c31894800e5122946",
                 "shasum": ""
             },
@@ -3327,7 +3764,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3349,14 +3785,9 @@
         {
             "name": "phpunit/php-text-template",
             "version": "1.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-text-template.git",
-                "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/phpunit/php-text-template/1.2.1/phpunit-php-text-template-1.2.1.zip",
                 "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
                 "shasum": ""
             },
@@ -3369,7 +3800,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3389,16 +3819,11 @@
         },
         {
             "name": "phpunit/php-timer",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "8b8454ea6958c3dee38453d3bd571e023108c91f"
-            },
+            "version": "2.1.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/8b8454ea6958c3dee38453d3bd571e023108c91f",
-                "reference": "8b8454ea6958c3dee38453d3bd571e023108c91f",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/phpunit/php-timer/2.1.2/phpunit-php-timer-2.1.2.zip",
+                "reference": "1038454804406b0b5f5f520358e78c1c2f71501e",
                 "shasum": ""
             },
             "require": {
@@ -3410,7 +3835,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev"
+                    "dev-master": "2.1-dev"
                 }
             },
             "autoload": {
@@ -3418,7 +3843,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3434,20 +3858,15 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2018-02-01T13:07:23+00:00"
+            "time": "2019-06-07T04:22:29+00:00"
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "21ad88bbba7c3d93530d93994e0a33cd45f02ace"
-            },
+            "version": "3.1.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/21ad88bbba7c3d93530d93994e0a33cd45f02ace",
-                "reference": "21ad88bbba7c3d93530d93994e0a33cd45f02ace",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/phpunit/php-token-stream/3.1.0/phpunit-php-token-stream-3.1.0.zip",
+                "reference": "e899757bb3df5ff6e95089132f32cd59aac2220a",
                 "shasum": ""
             },
             "require": {
@@ -3460,7 +3879,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -3468,7 +3887,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3483,20 +3901,15 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2018-02-01T13:16:43+00:00"
+            "time": "2019-07-25T05:29:42+00:00"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c5a120ade60992bd671a912188ee9ee9f8083bbd"
-            },
+            "version": "7.5.15",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c5a120ade60992bd671a912188ee9ee9f8083bbd",
-                "reference": "c5a120ade60992bd671a912188ee9ee9f8083bbd",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/phpunit/phpunit/7.5.15/phpunit-phpunit-7.5.15.zip",
+                "reference": "d79c053d972856b8b941bb233e39dc521a5093f0",
                 "shasum": ""
             },
             "require": {
@@ -3514,10 +3927,10 @@
                 "phpunit/php-code-coverage": "^6.0.7",
                 "phpunit/php-file-iterator": "^2.0.1",
                 "phpunit/php-text-template": "^1.2.1",
-                "phpunit/php-timer": "^2.0",
+                "phpunit/php-timer": "^2.1",
                 "sebastian/comparator": "^3.0",
                 "sebastian/diff": "^3.0",
-                "sebastian/environment": "^3.1 || ^4.0",
+                "sebastian/environment": "^4.0",
                 "sebastian/exporter": "^3.1",
                 "sebastian/global-state": "^2.0",
                 "sebastian/object-enumerator": "^3.0.3",
@@ -3541,7 +3954,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.4-dev"
+                    "dev-master": "7.5-dev"
                 }
             },
             "autoload": {
@@ -3549,7 +3962,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3567,19 +3979,14 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-10-18T09:02:52+00:00"
+            "time": "2019-08-21T07:05:16+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
             "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/code-unit-reverse-lookup.git",
-                "reference": "4419fcdb5eabb9caa61a27c7a1db532a6b55dd18"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/code-unit-reverse-lookup/zipball/4419fcdb5eabb9caa61a27c7a1db532a6b55dd18",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/sebastian/code-unit-reverse-lookup/1.0.1/sebastian-code-unit-reverse-lookup-1.0.1.zip",
                 "reference": "4419fcdb5eabb9caa61a27c7a1db532a6b55dd18",
                 "shasum": ""
             },
@@ -3600,7 +4007,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3617,14 +4023,9 @@
         {
             "name": "sebastian/comparator",
             "version": "3.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "5de4fc177adf9bce8df98d8d141a7559d7ccf6da"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/5de4fc177adf9bce8df98d8d141a7559d7ccf6da",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/sebastian/comparator/3.0.2/sebastian-comparator-3.0.2.zip",
                 "reference": "5de4fc177adf9bce8df98d8d141a7559d7ccf6da",
                 "shasum": ""
             },
@@ -3647,7 +4048,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3680,23 +4080,18 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "3.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "366541b989927187c4ca70490a35615d3fef2dce"
-            },
+            "version": "3.0.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/366541b989927187c4ca70490a35615d3fef2dce",
-                "reference": "366541b989927187c4ca70490a35615d3fef2dce",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/sebastian/diff/3.0.2/sebastian-diff-3.0.2.zip",
+                "reference": "720fcc7e9b5cf384ea68d9d930d480907a0c1a29",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.0",
+                "phpunit/phpunit": "^7.5 || ^8.0",
                 "symfony/process": "^2 || ^3.3 || ^4"
             },
             "type": "library",
@@ -3710,7 +4105,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3732,32 +4126,30 @@
                 "unidiff",
                 "unified diff"
             ],
-            "time": "2018-06-10T07:54:39+00:00"
+            "time": "2019-02-04T06:01:07+00:00"
         },
         {
             "name": "sebastian/environment",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "cd0871b3975fb7fc44d11314fd1ee20925fce4f5"
-            },
+            "version": "4.2.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/cd0871b3975fb7fc44d11314fd1ee20925fce4f5",
-                "reference": "cd0871b3975fb7fc44d11314fd1ee20925fce4f5",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/sebastian/environment/4.2.2/sebastian-environment-4.2.2.zip",
+                "reference": "f2a2c8e1c97c11ace607a7a667d73d47c19fe404",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0"
+                "php": "^7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.1"
+                "phpunit/phpunit": "^7.5"
+            },
+            "suggest": {
+                "ext-posix": "*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1.x-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
@@ -3765,7 +4157,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3782,20 +4173,15 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2017-07-01T08:51:00+00:00"
+            "time": "2019-05-05T09:05:15+00:00"
         },
         {
             "name": "sebastian/exporter",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "234199f4528de6d12aaa58b612e98f7d36adb937"
-            },
+            "version": "3.1.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/234199f4528de6d12aaa58b612e98f7d36adb937",
-                "reference": "234199f4528de6d12aaa58b612e98f7d36adb937",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/sebastian/exporter/3.1.1/sebastian-exporter-3.1.1.zip",
+                "reference": "06a9a5947f47b3029d76118eb5c22802e5869687",
                 "shasum": ""
             },
             "require": {
@@ -3817,11 +4203,14 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
                 {
                     "name": "Jeff Welch",
                     "email": "whatthejeff@gmail.com"
@@ -3831,16 +4220,12 @@
                     "email": "github@wallbash.com"
                 },
                 {
-                    "name": "Bernhard Schussek",
-                    "email": "bschussek@2bepublished.at"
-                },
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
-                },
-                {
                     "name": "Adam Harvey",
                     "email": "aharvey@php.net"
+                },
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
                 }
             ],
             "description": "Provides the functionality to export PHP variables for visualization",
@@ -3849,19 +4234,14 @@
                 "export",
                 "exporter"
             ],
-            "time": "2017-04-03T13:19:02+00:00"
+            "time": "2019-08-11T12:43:14+00:00"
         },
         {
             "name": "sebastian/global-state",
             "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/global-state.git",
-                "reference": "e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/sebastian/global-state/2.0.0/sebastian-global-state-2.0.0.zip",
                 "reference": "e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4",
                 "shasum": ""
             },
@@ -3885,7 +4265,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3905,14 +4284,9 @@
         {
             "name": "sebastian/object-enumerator",
             "version": "3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/object-enumerator.git",
-                "reference": "7cfd9e65d11ffb5af41198476395774d4c8a84c5"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/object-enumerator/zipball/7cfd9e65d11ffb5af41198476395774d4c8a84c5",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/sebastian/object-enumerator/3.0.3/sebastian-object-enumerator-3.0.3.zip",
                 "reference": "7cfd9e65d11ffb5af41198476395774d4c8a84c5",
                 "shasum": ""
             },
@@ -3935,7 +4309,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3952,14 +4325,9 @@
         {
             "name": "sebastian/object-reflector",
             "version": "1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/object-reflector.git",
-                "reference": "773f97c67f28de00d397be301821b06708fca0be"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/object-reflector/zipball/773f97c67f28de00d397be301821b06708fca0be",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/sebastian/object-reflector/1.1.1/sebastian-object-reflector-1.1.1.zip",
                 "reference": "773f97c67f28de00d397be301821b06708fca0be",
                 "shasum": ""
             },
@@ -3980,7 +4348,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3997,14 +4364,9 @@
         {
             "name": "sebastian/recursion-context",
             "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/recursion-context.git",
-                "reference": "5b0cd723502bac3b006cbf3dbf7a1e3fcefe4fa8"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/5b0cd723502bac3b006cbf3dbf7a1e3fcefe4fa8",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/sebastian/recursion-context/3.0.0/sebastian-recursion-context-3.0.0.zip",
                 "reference": "5b0cd723502bac3b006cbf3dbf7a1e3fcefe4fa8",
                 "shasum": ""
             },
@@ -4025,7 +4387,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -4050,14 +4411,9 @@
         {
             "name": "sebastian/resource-operations",
             "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/resource-operations.git",
-                "reference": "4d7a795d35b889bf80a0cc04e08d77cedfa917a9"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/resource-operations/zipball/4d7a795d35b889bf80a0cc04e08d77cedfa917a9",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/sebastian/resource-operations/2.0.1/sebastian-resource-operations-2.0.1.zip",
                 "reference": "4d7a795d35b889bf80a0cc04e08d77cedfa917a9",
                 "shasum": ""
             },
@@ -4075,7 +4431,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -4092,14 +4447,9 @@
         {
             "name": "sebastian/version",
             "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/version.git",
-                "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019"
-            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/99732be0ddb3361e16ad77b68ba41efc8e979019",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/sebastian/version/2.0.1/sebastian-version-2.0.1.zip",
                 "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019",
                 "shasum": ""
             },
@@ -4117,7 +4467,6 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -4134,16 +4483,11 @@
         },
         {
             "name": "theseer/tokenizer",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/theseer/tokenizer.git",
-                "reference": "cb2f008f3f05af2893a87208fe6a6c4985483f8b"
-            },
+            "version": "1.1.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/cb2f008f3f05af2893a87208fe6a6c4985483f8b",
-                "reference": "cb2f008f3f05af2893a87208fe6a6c4985483f8b",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/theseer/tokenizer/1.1.3/theseer-tokenizer-1.1.3.zip",
+                "reference": "11336f6f84e16a720dae9d8e6ed5019efa85a0f9",
                 "shasum": ""
             },
             "require": {
@@ -4158,40 +4502,34 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "email": "arne@blankerts.de",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "arne@blankerts.de"
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
-            "time": "2017-04-07T12:08:54+00:00"
+            "time": "2019-06-13T22:48:21+00:00"
         },
         {
             "name": "webmozart/assert",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a"
-            },
+            "version": "1.5.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/0df1908962e7a3071564e857d86874dad1ef204a",
-                "reference": "0df1908962e7a3071564e857d86874dad1ef204a",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/webmozart/assert/1.5.0/webmozart-assert-1.5.0.zip",
+                "reference": "88e6d84706d09a236046d686bbea96f07b3a34f4",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3 || ^7.0"
+                "php": "^5.3.3 || ^7.0",
+                "symfony/polyfill-ctype": "^1.8"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.6",
-                "sebastian/version": "^1.0.1"
+                "phpunit/phpunit": "^4.8.36 || ^7.5.13"
             },
             "type": "library",
             "extra": {
@@ -4204,7 +4542,6 @@
                     "Webmozart\\Assert\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4220,7 +4557,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2018-01-29T19:49:41+00:00"
+            "time": "2019-08-24T08:43:50+00:00"
         }
     ],
     "aliases": [],
