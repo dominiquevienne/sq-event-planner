@@ -12,8 +12,8 @@
 
 @section('content')
 
-    <h1 style="font-size: 3.5em;color:#fa5b35">Welcome Brave Pioneer!</h1>
-    <h1>{{$event->name}} - SPACEQUEST</h1>
+    <h1 style="font-size: 3.5em;color:#fa5b35">{{$event->header}}</h1>
+    <h1>{{$event->name}}</h1>
     <div class="card-group col-sm-10 ">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
@@ -40,7 +40,7 @@
                         <path fill-rule="evenodd"
                               d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path>
                     </svg>
-                    Geneva - Palexpo
+                    {{$event->location}}
                 </p>
                 <a target="_blank" href="{{$event->gmap}}" class="card-link">Open in Google Maps</a>
             </div>

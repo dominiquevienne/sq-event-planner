@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\DB;
  * @property Carbon $registration_deadline
  * @property string $name
  * @property string $theme
+ * @property string $header
  * @property Field[] $fields
  * @property Field[] $answerFields
  * @property mixed $teams

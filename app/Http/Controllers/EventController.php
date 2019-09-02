@@ -15,7 +15,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        return redirect('events/1');
+        return redirect('events/2');
 
         #return view("events.index", ['events' => Event::all()]);
     }
