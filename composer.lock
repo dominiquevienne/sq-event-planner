@@ -4,25 +4,30 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92b066849a80d5ea79140b2330cc0cf9",
+    "content-hash": "882f4df0cf2e0d9aa3865e7cfdcd04cc",
     "packages": [
         {
             "name": "adldap2/adldap2",
-            "version": "v8.1.5",
+            "version": "v10.0.11",
             "dist": {
                 "type": "zip",
-                "url": "https://nexus.bank.swissquote.ch/repository/composer/adldap2/adldap2/v8.1.5/adldap2-adldap2-v8.1.5.zip",
-                "reference": "54722408c68f12942fcbf4a1b666d90a178ddc5c",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/adldap2/adldap2/v10.0.11/adldap2-adldap2-v10.0.11.zip",
+                "reference": "beb3c9cc28de752d6c3b0221605035659eccc42e",
                 "shasum": ""
             },
             "require": {
                 "ext-ldap": "*",
-                "illuminate/support": "~5.0",
-                "php": ">=5.5.9"
+                "illuminate/contracts": "~5.0",
+                "php": ">=7.0",
+                "psr/log": "~1.0",
+                "tightenco/collect": "~5.0"
             },
             "require-dev": {
-                "mockery/mockery": "~0.9|~1.0",
-                "phpunit/phpunit": "~4.8|~5.6"
+                "mockery/mockery": "~1.0",
+                "phpunit/phpunit": "~6.0"
+            },
+            "suggest": {
+                "ext-fileinfo": "fileinfo is required when retrieving user encoded thumbnails"
             },
             "type": "library",
             "autoload": {
@@ -50,25 +55,26 @@
                 "ldap",
                 "windows"
             ],
-            "time": "2018-04-19T15:06:54+00:00"
+            "time": "2019-05-24T14:15:58+00:00"
         },
         {
             "name": "adldap2/adldap2-laravel",
-            "version": "v4.0.10",
+            "version": "v6.0.7",
             "dist": {
                 "type": "zip",
-                "url": "https://nexus.bank.swissquote.ch/repository/composer/adldap2/adldap2-laravel/v4.0.10/adldap2-adldap2-laravel-v4.0.10.zip",
-                "reference": "a5196cce3b5394d7b5e84eb68b38260cb9f0fd3c",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/adldap2/adldap2-laravel/v6.0.7/adldap2-adldap2-laravel-v6.0.7.zip",
+                "reference": "e7e60f0f10ff845bf8e8c965258c86a33c9ab266",
                 "shasum": ""
             },
             "require": {
-                "adldap2/adldap2": "^8.0",
-                "php": ">=7.0"
+                "adldap2/adldap2": "^10.0",
+                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "php": ">=7.1"
             },
             "require-dev": {
                 "mockery/mockery": "~1.0",
-                "orchestra/testbench": "~3.2",
-                "phpunit/phpunit": "~6.0"
+                "orchestra/testbench": "~3.7",
+                "phpunit/phpunit": "~7.0"
             },
             "type": "library",
             "extra": {
@@ -97,7 +103,7 @@
                 "laravel",
                 "ldap"
             ],
-            "time": "2018-09-18T14:27:05+00:00"
+            "time": "2019-06-28T17:34:46+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2776,6 +2782,50 @@
                 "dump"
             ],
             "time": "2019-08-26T08:26:39+00:00"
+        },
+        {
+            "name": "tightenco/collect",
+            "version": "v5.8.34",
+            "dist": {
+                "type": "zip",
+                "url": "https://nexus.bank.swissquote.ch/repository/composer/tightenco/collect/v5.8.34/tightenco-collect-v5.8.34.zip",
+                "reference": "957e430c26c51b65c80acc87896023229dc05a21",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/var-dumper": ">=3.4 <5"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "nesbot/carbon": "^1.26.3",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Collect/Support/helpers.php",
+                    "src/Collect/Support/alias.php"
+                ],
+                "psr-4": {
+                    "Tightenco\\Collect\\": "src/Collect"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "Collect - Illuminate Collections as a separate package.",
+            "keywords": [
+                "collection",
+                "laravel"
+            ],
+            "time": "2019-07-30T19:16:47+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",

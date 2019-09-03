@@ -2,6 +2,8 @@
 
 return [
 
+    'model' => App\User::class,
+
     /*
     |--------------------------------------------------------------------------
     | Connection
@@ -15,7 +17,7 @@ return [
     |
     */
 
-    'connection' => env('ADLDAP_CONNECTION', 'default'),
+    'connection' => env('LDAP_CONNECTION', 'default'),
 
     /*
     |--------------------------------------------------------------------------
@@ -90,90 +92,21 @@ return [
 
     ],
 
-    'usernames' => [
-
-        /*
-        |--------------------------------------------------------------------------
-        | LDAP
-        |--------------------------------------------------------------------------
-        |
-        | Discover:
-        |
-        |   The discover value is the users attribute you would
-        |   like to locate LDAP users by in your directory.
-        |
-        |   For example, using the default configuration below, if you're
-        |   authenticating users with an email address, your LDAP server
-        |   will be queried for a user with the a `userprincipalname`
-        |   equal to the entered email address.
-        |
-        | Authenticate:
-        |
-        |   The authenticate value is the users attribute you would
-        |   like to use to bind to your LDAP server.
-        |
-        |   For example, when a user is located by the above 'discover'
-        |   attribute, the users attribute you specify below will
-        |   be used as the username to bind to your LDAP server.
-        |
-        */
+    'identifiers' => [
 
         'ldap' => [
-
-            'discover' => 'samaccountname',
-
-            'authenticate' => 'samaccountname',
-
+            'locate_users_by' => 'samaccountname',
+            'bind_users_by' => 'samaccountname',
         ],
 
-        /*
-        |--------------------------------------------------------------------------
-        | Eloquent
-        |--------------------------------------------------------------------------
-        |
-        | The value you enter is the database column name used for locating
-        | the local database record of the authenticating user.
-        |
-        | If you're using a `username` column instead, change this to `username`.
-        |
-        | This option is only applicable to the DatabaseUserProvider.
-        |
-        */
-
-        'eloquent' => 'login',
-
-        /*
-        |--------------------------------------------------------------------------
-        | Windows Authentication Middleware (SSO)
-        |--------------------------------------------------------------------------
-        |
-        | Discover:
-        |
-        |   The 'discover' value is the users attribute you would
-        |   like to locate LDAP users by in your directory.
-        |
-        |   For example, if 'samaccountname' is the value, then your LDAP server is
-        |   queried for a user with the 'samaccountname' equal to the value of
-        |   $_SERVER['AUTH_USER'].
-        |
-        |   If a user is found, they are imported (if using the DatabaseUserProvider)
-        |   into your local database, then logged in.
-        |
-        | Key:
-        |
-        |    The 'key' value represents the 'key' of the $_SERVER
-        |    array to pull the users account name from.
-        |
-        |    For example, $_SERVER['AUTH_USER'].
-        |
-        */
+        'database' => [
+            'guid_column' => 'objectguid',
+            'username_column' => 'login',
+        ],
 
         'windows' => [
-
-            'discover' => 'samaccountname',
-
-            'key' => 'AUTH_USER',
-
+            'locate_users_by' => 'samaccountname',
+            'server_key' => 'AUTH_USER',
         ],
 
     ],
@@ -201,7 +134,7 @@ return [
         |
         */
 
-        'sync' => env('ADLDAP_PASSWORD_SYNC', false),
+        'sync' => env('LDAP_PASSWORD_SYNC', false),
 
         /*
         |--------------------------------------------------------------------------
@@ -236,7 +169,7 @@ return [
     |
     */
 
-    'login_fallback' => env('ADLDAP_LOGIN_FALLBACK', false),
+    'login_fallback' => env('LDAP_LOGIN_FALLBACK', false),
 
     /*
     |--------------------------------------------------------------------------
